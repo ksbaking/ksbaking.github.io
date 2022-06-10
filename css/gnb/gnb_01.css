@@ -1,0 +1,798 @@
+/* --------------------------  'mobile버전' 시작 ------------------------------ */
+/* 360 x 640px를 디폴트로 */
+/* 가로 : 50px = 13.8 %*/
+/* 높이 : 50px = 7.8 %  */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/* --------------------------  container 시작 -------------------------- */
+@media screen and (min-width:0px) and (max-width:767px) {
+    /* --------------------------  '학원' 시작 ---------------------------- */
+    
+    #container_Mobile #academy_Mobile_01{
+    width: 100%;
+    height: 200px;
+
+    background: no-repeat;
+    background-size: 100% 100%;
+    }
+    #container_Mobile #academyName{
+        width: 100%;
+        height: 50px;
+        padding-top:30px;
+
+
+        text-align: center;
+        font-size: 25px;
+        color: #fff;
+        font-weight: 600;
+
+    }
+    #container_Mobile #academyNameintoroduce{
+        width: 100%;
+        height: 40px;
+        margin-top:30px;
+
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+
+    }
+    
+    /* academy_Mobile_02 box 컨텐츠 */
+    #container_Mobile #academy_box_row{
+        width: 100%;
+        height: 470px;
+
+        position: relative;
+        top:-20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    #container_Mobile .academy_box_column{
+        position: relative;
+        left:10%;
+        width:80%;
+        height: 200px;
+
+        display: flex;
+        flex-direction: row;
+        gap:10%;
+    }
+    #container_Mobile .academy_box{
+        /* position: relative;
+        left:50px; */
+        width: 45%;
+        padding-bottom: 45%;
+
+        background-color: #fff;
+        border: 1px solid #aaa;
+        box-shadow: 5px 5px 3px rgba(170, 170, 170, 0.5);;
+    }
+    #container_Mobile .academy_box_Theme{
+        padding-top: 20px;
+        font-size: 20px;
+        color: #555;
+        font-weight: 800;
+        text-align: center;
+    }
+    #container_Mobile .academy_box_Contents{
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        font-size: 12px;
+        color: #555;
+        font-weight: 800;
+    }
+
+
+    #container_Mobile #academy_Mobile_03{
+        width: 100%;
+        height: 1100px;
+        background-color: #ddd;
+
+        /* display: flex;
+        flex-direction: row; */
+    }
+    #container_Mobile #academy_introduce{
+        width: 100%;
+    }
+    #container_Mobile #academy_introduce > img{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    #container_Mobile #academyIntroduce{
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        
+        font-size: 15px;
+        color: #555;
+        font-weight: 800;
+    }
+    #container_Mobile #academy_picture{
+        width: 100%;
+    }
+    #container_Mobile #academy_picture_01{
+        position:relative;
+        top:50px;
+        left:30px;
+        width: 250px;
+        height: 250px;
+        border:10px solid #fff
+    }
+    #container_Mobile #academy_picture_02{
+        position:relative;
+        left:150px;
+        width: 250px;
+        height: 250px;
+        transform: rotate(20deg);
+        border:10px solid #fff
+    }
+
+    /* --------------------------  '학원' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '강사' 시작 ---------------------------- */
+    #container_Mobile .instructor_Mobile{
+        width: 100%;
+        padding-bottom: 50px;
+        background: linear-gradient(to right, rgb(135,206,250),white);
+    }
+    #container_Mobile .instructor_introduce_box_01{
+        /* position: relative;
+        left:5%;
+        width: 90%; */
+        /* height: 450px; */
+        padding-top: 10px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #container_Mobile .instructor_picture{
+        margin-top: 20px;
+        width: 30vw;
+        height: 40vw;
+
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    #container_Mobile .instructor_contents{
+        width: 50%;
+    }
+    #container_Mobile .instructor_belong{
+        padding-top:20px;
+        font-size: 16px;
+        color: #333;
+        font-weight: 800;
+    }
+    #container_Mobile .instructor_name{
+        padding-top: 15px;
+        font-size: 20px;
+        color: cornflowerblue;
+        font-weight: 800;
+        padding-bottom: 20px;
+    }
+    #container_Mobile .instructor_introduce{
+        width: 100%;
+        font-size: 14px;
+        color: #999;
+        font-weight: 700;
+    }
+    #container_Mobile .instructor_introduce_box_02{
+        width: 100%;
+        height: 110px;
+        background-color: dodgerblue;
+
+        display: flex;
+        flex-direction: row;
+    }
+    #container_Mobile .instructor_introduce_EnC{
+        width: 50%;
+        height: 100px;
+        margin-left: 20px;
+        margin-top: 10px;
+
+        display: flex;
+        flex-direction: row;
+    }
+    #container_Mobile .instructor_introduce_EnC_img{
+        margin-top: 5px;
+        width: 10vw;
+        height: 10vw;
+
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    #container_Mobile .instructor_introduce_EnC_Theme{
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-bottom: 5px;
+
+        font-size: 16px;
+        color:#fff;
+        font-weight: 600;
+    }
+    #container_Mobile .instructor_introduce_EnC_Contents{
+        padding-left: 20px;
+
+        font-size: 12px;
+        color:#fff;
+    }
+    /* --------------------------  '강사' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '시설' 시작 ---------------------------- */
+    #container_Mobile #facilities_mobile_01{
+        padding-bottom: 50px;
+    }
+    #container_Mobile #facilities_row_01{
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        background-color: bisque;
+    }
+    #container_Mobile #facilities_theme{
+        padding-top: 15px;
+        font-size: 36px;
+        color: #333;
+        font-weight: 800;
+        text-align: center;
+    }
+    #container_Mobile #facilities_contents{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        font-weight: 800;
+        color:#555;
+        text-align: center;
+    }
+    #container_Mobile #facilities_row_02{
+        width: 100%;
+        height: 50px;
+    }
+    #container_Mobile #facilities_picture{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+    }
+    #container_Mobile .facilities_picture_row{
+        width: 90%;
+        position: relative;
+        left:5%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #container_Mobile .facilities_picture_column{
+        width: 45%;
+        padding-bottom: 45%;
+        border: 5px solid #fff;
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    #container_Mobile #facilities_footer_contents{
+        padding-top:20px;
+        font-size: 15px;
+        font-weight: 800;
+        color:#555;
+        text-align: center;
+    }
+    /* --------------------------  '시설' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '오시는길' 시작 ---------------------------- */
+    #container_Mobile #directions_Mobile_01{
+        /* height: 250px; */
+        height: 25vw;
+        /* margin-top: 20px; */
+    }
+    #container_Mobile #welocome{
+        /* width: 1000px; */
+        width: 100%;
+        height: 25vw;
+        /* height: 250px; */
+        background-size: 100% 100%;
+    }
+    #container_Mobile #welocometext{
+        padding-top: 20px;
+        color: #fff;
+        font-size: 26px;
+        text-align: center;
+    }
+    #container_Mobile #directions_Mobile_02{
+        /* width:1000px; */
+        width: 100vw;
+        /* height: 1000px; */
+        background-color: #eee;
+
+
+    }
+    #container_Mobile #comingMethod{
+        /* margin-left:50px; */
+        /* width:1000px; */
+        width: 100vw;
+        /* height:800px; */
+    }
+    #container_Mobile #kakaomap{
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+    }
+    #container_Mobile #map{
+        /* margin-top: 40px; */
+        width:80vw;
+        height:40vw;
+        position: relative;
+        left: 10vw;
+
+        border: 1px solid #fff;
+    }
+    #container_Mobile #mapmenu{
+        /* width:900px; */
+        width: 80vw;
+        height: 38px;
+        position: relative;
+        left:10vw;
+        
+        background-color: #666;
+    }
+    #container_Mobile #mapmenu_buttonbar{
+
+        display:flex;
+        flex-direction: row;
+    }
+    #container_Mobile #mapmenu_buttonbar > a{    
+        /* width:298px; */
+        width: 33%;
+        height:38px;
+
+        border: 1px solid #fff;
+    }
+    #container_Mobile .mapmenu_button{
+        font-size: 12px;
+        padding-top:10px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+    #container_Mobile #mapmenu_buttonbar > a:hover{
+        background-color: #fff;
+    }
+    #container_Mobile .mapmenu_button:hover{
+        color:#333
+    }
+
+    #container_Mobile #cominglocation{
+        margin-top: 10px;
+        /* width: 900px; */
+        width: 80vw;
+        /* height: 400px; */
+        height: 90vw;
+        position: relative;
+        left:10vw;
+        background-color: #ddd;
+    }
+    #container_Mobile .cominglocation_Thme{
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 22px;
+        color: #555;
+        font-weight: 800;
+    }
+    #container_Mobile .cominglocation_contents{
+        margin-left: 30px;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #777;
+        font-weight: 700;
+    }
+    #container_Mobile .cominglocation_contents::before{
+        content: "- ";
+    }
+    /* --------------------------  '오시는길' 종료 ---------------------------- */
+
+
+
+
+}                                                                  
+/* ------------------------  container_wrap 종료 -------------------------- */
+/* --------------------------  'PC버전' 시작 ------------------------------ */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/* --------------------------  'PC버전' 시작--------------------------- */
+@media screen and (min-width:768px) {
+
+    /* --------------------------  '학원' 시작 ---------------------------- */
+    #container_PC #academy_PC_01{
+        width: 1200px;
+        height: 550px;
+
+        background-size: 1200px 550px;
+    }
+    #container_PC #academyName{
+        position:relative;
+        top:120px;
+        left:100px;
+
+        font-size: 50px;
+        color: #fff;
+        font-weight: 900;
+    }
+    #container_PC #academyNameintoroduce{
+        position:relative;
+        top:200px;
+        left:100px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+    }
+    /* academy_PC_02 box 컨텐츠 */
+    #container_PC #academy_box_row{
+        width: 1200px;
+        height: 400px;
+
+        position: relative;
+        top:-100px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    #container_PC .academy_box_column{
+        width: 1200px;
+        height: 200px;
+
+        display: flex;
+        flex-direction: row;
+        gap:100px;
+    }
+    #container_PC .academy_box{
+        position: relative;
+        left:50px;
+        width: 300px;
+        height: 200px;
+
+        background-color: #fff;
+        border: 1px solid #aaa;
+        box-shadow: 5px 5px 3px rgba(170, 170, 170, 0.5);;
+    }
+    #container_PC .academy_box_Theme{
+        padding-top: 30px;
+        font-size: 22px;
+        color: #555;
+        font-weight: 800;
+        text-align: center;
+    }
+    #container_PC .academy_box_Contents{
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        font-size: 15px;
+        color: #555;
+        font-weight: 800;
+    }
+    /* academy_PC_03 내용 */
+    #container_PC #academy_PC_03{
+        width: 1200px;
+        height: 700px;
+        background-color: #ddd;
+
+        display: flex;
+        flex-direction: row;
+    }
+    #container_PC #academy_introduce{
+        width: 600px;
+    }
+    #container_PC #academy_introduce > img{
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    #container_PC #academyIntroduce{
+        margin-top: 60px;
+        margin-left: 50px;
+        font-size: 20px;
+        color: #555;
+        font-weight: 800;
+    }
+    #container_PC #academy_picture{
+        width: 600px;
+    }
+    #container_PC #academy_picture_01{
+        position:relative;
+        top:80px;
+        left:50px;
+        width: 300px;
+        height: 300px;
+        border:10px solid #fff
+    }
+    #container_PC #academy_picture_02{
+        position:relative;
+        left:180px;
+        width: 300px;
+        height: 300px;
+        transform: rotate(20deg);
+        border:10px solid #fff
+    }
+
+
+
+    /* --------------------------  '학원' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '강사' 시작 ---------------------------- */
+    #container_PC .instructor_PC{
+        width: 1200px;
+        height: 800px;
+        background: linear-gradient(to right, rgb(135,206,250),white);
+    }
+    #container_PC .instructor_introduce_box_01{
+        height: 450px;
+
+        display: flex;
+        flex-direction: row;
+        gap:30px;
+    }
+    #container_PC .instructor_picture{
+        width: 450px;
+        height: 450px;
+        margin-left: 150px;
+        margin-top: 50px;
+
+        background: no-repeat;
+        background-size: 300px 400px;
+    }
+    #container_PC .instructor_contents{
+        width: 750px;
+    }
+    #container_PC .instructor_belong{
+        padding-top:70px;
+        font-size: 30px;
+        color: #333;
+        font-weight: 800;
+    }
+    #container_PC .instructor_name{
+        padding-top: 20px;
+        font-size: 50px;
+        color: cornflowerblue;
+        font-weight: 800;
+        padding-bottom: 30px;
+    }
+    #container_PC .instructor_introduce{
+        width: 400px;
+        font-size: 20px;
+        color: #999;
+        font-weight: 700;
+    }
+    #container_PC .instructor_introduce_box_02{
+        position: relative;
+        width: 1100px;
+        height: 250px;
+        background-color: dodgerblue;
+        left: 50px;
+
+        display: flex;
+        flex-direction: row;
+    }
+    #container_PC .instructor_introduce_EnC{
+        width: 450px;
+        height: 200px;
+        margin-left: 50px;
+        margin-top: 25px;
+
+        display: flex;
+        flex-direction: row;
+    }
+    #container_PC .instructor_introduce_EnC_img{
+        padding-top: 10px;
+        width: 100px;
+        height: 100px;
+
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    #container_PC .instructor_introduce_EnC_Theme{
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+
+        font-size: 25px;
+        color:#fff;
+        font-weight: 600;
+    }
+    #container_PC .instructor_introduce_EnC_Contents{
+        padding-left: 20px;
+
+        font-size: 15px;
+        color:#fff;
+    }
+    
+
+    /* color: cornflowerblue; */
+
+    /* --------------------------  '강사' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '시설' 시작 ---------------------------- */
+    
+    #container_PC #facilities_PC_01{
+        margin-top: 20px
+    }
+    #container_PC #facilities_PC_01 #facilities_row_01{
+        height: 600px;
+        background-color: bisque;
+    }
+    #container_PC #facilities_PC_01 #facilities_theme{
+        padding-top: 30px;
+        font-size: 50px;
+        color: #333;
+        font-weight: 800;
+        text-align: center;
+    }
+    #container_PC #facilities_PC_01 #facilities_contents{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 15px;
+        font-weight: 800;
+        color:#555;
+        text-align: center;
+    }
+    #container_PC #facilities_PC_01 #facilities_row_02{
+        height: 300px;
+    }
+    #container_PC #facilities_PC_01 #facilities_picture{
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+    }
+    #container_PC #facilities_PC_01 .facilities_picture_row{
+        position: relative;
+        left:40px;
+
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }
+    #container_PC #facilities_PC_01 .facilities_picture_column{
+        width: 290px;
+        height: 290px;
+        border: 5px solid #fff;
+        background-size: 280px 280px;
+    }
+    #container_PC #facilities_PC_01 #facilities_footer_contents{
+        position: relative;
+        top:200px;
+        font-size: 15px;
+        font-weight: 800;
+        color:#555;
+        text-align: center;
+    }
+
+
+
+
+    /* --------------------------  '시설' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '오시는길' 시작 ---------------------------- */
+    #container_PC #directions_PC_01{
+        height: 250px;
+        margin-top: 20px;
+    }
+    #container_PC #welocome{
+        width: 1000px;
+        height: 250px;
+        background-size: 100% 100%;
+    }
+    #container_PC #welocometext{
+        padding-top: 45px;
+        color: #fff;
+        font-size: 50px;
+        text-align: center;
+    }
+    #container_PC #directions_PC_02{
+        width:1000px;
+        height: 1000px;
+        background-color: #eee;
+
+
+    }
+    #container_PC #comingMethod{
+        margin-left:50px;
+        width:1000px;
+        height:800px;
+    }
+    #container_PC #map{
+        margin-top: 40px;
+        width:898px;
+        height:398px;
+
+        border: 1px solid #fff;
+    }
+    #container_PC #mapmenu{
+        width:900px;
+        height: 38px;
+        background-color: #666;
+    }
+    #container_PC #mapmenu_buttonbar{
+
+        display:flex;
+        flex-direction: row;
+    }
+    #container_PC #mapmenu_buttonbar > a{    
+        width:298px;
+        height:38px;
+
+        border: 1px solid #fff;
+    }
+    #container_PC .mapmenu_button{
+        font-size: 15px;
+        padding-top:10px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+    #container_PC #mapmenu_buttonbar > a:hover{
+        background-color: #fff;
+    }
+    #container_PC .mapmenu_button:hover{
+        color:#333
+    }
+
+    #container_PC #cominglocation{
+        margin-top: 20px;
+        width: 900px;
+        height: 400px;
+        background-color: #ddd;
+    }
+    #container_PC .cominglocation_Thme{
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 30px;
+        color: #555;
+        font-weight: 800;
+    }
+    #container_PC .cominglocation_contents{
+        margin-left: 30px;
+        margin-top: 10px;
+        font-size: 20px;
+        color: #777;
+        font-weight: 700;
+    }
+    #container_PC .cominglocation_contents::before{
+        content: "- ";
+    }
+    /* --------------------------  '오시는길' 종료 ---------------------------- */
+
+}

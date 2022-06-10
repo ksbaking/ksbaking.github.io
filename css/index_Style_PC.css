@@ -1,0 +1,874 @@
+/* --------------------------  header 시작 -------------------------- */
+@media screen and (min-width:768px) {
+    #header_wrap{
+        /* position:fixed; 메뉴바 위치 상단 고정 */
+        position:sticky;/* 메뉴바 위치 상단 고정 */
+        top:0;
+        background-color: white;    /*스크롤바 내릴때 메뉴바 보이는것 제거*/
+        z-index:99; /*메뉴바 맨위로 보이기 고정*/
+    } 
+    #header_PC{
+        display: flex;
+        flex-direction: column; /*header top과 gnb 세로 정렬*/
+    }
+    /* 헤더부분 */
+    #header_PC > #header_top_PC{
+        height: 130px;
+    }
+    #header_top_PC_top{
+        height: 30px ;
+        background-color: #f5f5f5;
+    }
+    #header_top_PC_top_menu{
+        width: 1200px;
+        min-width: 1200px;
+        
+        position:relative;
+        margin:0 auto;
+    }
+    #header_top_PC_top_menu > ul{
+        float:right;
+        padding-top:5px;
+
+        display: flex;
+        flex-direction: row;
+    }
+    #header_top_PC_top_menu > ul > li > a{
+        color:goldenrod;
+        padding: 2px 10px 2px 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    #header_top_PC_bottom{
+        width:1200px;
+        min-width: 1200px;
+        height: 100px;
+        position:relative;
+        margin:0 auto;
+    }
+    #header_top_PC_bottom > #main_logo_PC{
+        width: 460px;
+        
+        position:relative;
+        margin:0 auto;
+    }
+    #header_top_PC_bottom > #main_logo_PC > a{
+        display: flex;
+        flex-direction: row;
+    }
+    #header_top_PC_bottom > #main_logo_PC> a > img{
+        margin-top:20px;
+        cursor: pointer;
+    }
+    #header_top_PC_bottom > #main_logo_PC> a > h1{
+        margin-top: 15px;
+        color:firebrick;
+        font-size: 40px;
+        font-weight: 800;
+        cursor: pointer;
+    }
+    
+    /* gnb 부분 */
+    #header_PC > #gnb_PC{
+        background-color: #f5f5f5;
+        border-top:1px solid goldenrod;
+        border-bottom:1px solid goldenrod;
+        padding-bottom: 5px;
+        width: 100%;
+        min-width: 1200px;
+    }
+    #header_PC > #gnb_PC > #menu_bar_PC{
+        position:relative;
+        margin:auto;
+        width:1200px;
+        display: flex; 
+        flex-direction: row;    
+    }
+    .dropdown_button{
+        width: 200px;
+
+        position: relative;/* 드롭다운메뉴 간격을 위한 설정 */
+        top:5px;
+        padding:5px 10px 10px 10px;/* 메뉴 글자 위,오른쪽,아래,왼쪽 간격*/
+        text-align: center;
+    }
+    .dropdown_button > a{
+        width: 200px;
+        text-align: center;
+        font-size : 16px;
+        font-weight: 900;
+        color: #000;
+    }
+    .dropdown_menu_wrap{
+        display: none; /* 드롭다운메뉴 숨기기*/
+        position:absolute; /* 드롭다운메뉴 위치 설정*/
+        margin-top:10px; /* 메뉴바와 드롭다운메뉴와 간격조절*/
+        width: 1200px;
+        left:0;
+        display: flex;
+        flex-direction: row;
+        background-color: none;
+        
+    }
+    .dropdown_menu{
+        display: none;
+        width:200px; /*드롭다운메뉴의 크기를 메뉴바와 같게*/
+        left:0;/* 드롭다운메뉴 위치를 메뉴바와 맞추기*/
+
+        border-left:1px solid #ccc;/* 드롭다운메뉴 박스경계그리기*/ 
+        border-right:1px solid #ccc;
+    }
+    .dropdown_menu > a > li{
+        padding:5px 10px 5px 10px;/*드롭다운메뉴 글자 위,오른,아래,왼쪽 간격 */
+        text-align: center;/* 드롭다운메뉴글자 가운데 정렬 */
+        opacity: 0.6;
+        color:#000;
+        font-size : 16px;
+        font-weight: 800;
+    }
+    /*----- 메뉴바, 드롭다운메뉴 hover 설정 -----*/
+    #menu_bar_PC:hover{
+        cursor: pointer;
+    }
+    .dropdown_button > a:hover{
+        cursor: pointer;
+        color: firebrick;
+    }
+    #menu_bar_PC:hover >  .dropdown_button > .dropdown_menu_wrap > .dropdown_menu{
+        display: block;
+        background-color: #fff; /*슬라이드에 배경색이 안 묻히도록 하기*/
+        z-index:99; /* 드롭다운 메뉴 슬라이드보다 위에 보이게 하기*/
+    }
+    .dropdown_menu > a > li:hover{
+        background-color:#ccc;
+        cursor: pointer;
+        opacity: 1.0
+    }
+
+
+
+
+
+
+}
+/* --------------------------  header 종료 -------------------------- */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/* ------------------------  container_wrap 시작 -------------------- */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+@media screen and (min-width:768px) {
+
+
+
+    #scrollmenu{
+        position: fixed;
+        top:300px;
+        right:100px;
+        z-index: 99;
+
+        width:75px;
+    }
+    #scrollmenu_button_Theme{
+        width:75px;
+        height: 40px;
+
+        padding-top: 10px;
+        font-size: 14px;
+        text-align: center;
+
+        color:#444;
+        background-color: #999;
+        border: 1px solid #444;
+    }
+    .scrollmenu_button{
+        width:75px;
+        height: 75px;
+
+        background-color: #f5f5f5;
+        border: 1px solid goldenrod;
+    }
+
+    /*----------------------- contents_PC_01 -----------------------*/
+    /* 슬라이드 */
+    #container_PC > #contents_PC_01{
+        height: 640px;
+    }
+    .slide_container{
+        width: 100%;    /* 슬라이드 넓이 최대 */
+        min-width: 1200px; /* 윈도우 창 조절 시 슬라이드 최소 넓이 1200px */
+        position: relative; /* <> 버튼 위치 고정을 위해 필요*/
+    }
+    .slideImg{
+        background-color: #000;
+        text-align: center;
+    }
+    /* 슬라이드 <> 버튼 설정 */
+    #prev, #next{   
+        cursor: pointer;   /* <>버튼 커서 보기*/
+        position: absolute; /* <>버튼 위치*/
+        top: 40%; /* <>버튼 세로 가운데 정렬*/
+        padding: 1.5rem;  /* <>버튼여백 크기*/
+        color: #fff;    /* <>버튼 색*/
+        font-weight: bold; /* <>버튼 굵기*/
+        font-size: 1.2rem; /* <>버튼 사이즈*/
+        background-color: rgba(0,0,0,0.3); /* <>버튼 배경 연하게*/
+        transition: 0.6s ease;  user-select: none;
+    }
+    #prev{
+        left:10px;  /* < 버튼 왼쪽 정렬 */
+    }
+    #next{
+        right:10px; /* > 버튼 오른쪽 정렬 */
+    }
+    #prev:hover, #next:hover {
+        background-color: rgba(0,0,0,0.8); /* <> 버튼 선택시 진하게 */
+    }
+    /* 슬라이드 번호 설정 */
+    .slideNumber{
+        color: #f2f2f2;
+        font-size:1.2rem;
+        padding: 8px 12px;
+        position: absolute;
+    }
+     /*슬라이드 도트(dot) 설정*/
+    #slidesDot{
+        height: 40px;
+        background-color: #555;
+        min-width: 1200px; /* 윈도우 창 조절 시 슬라이드 최소 넓이 1200px */
+        position:relative;
+        text-align: center;
+    }
+    .slideDotButton{   
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 10px 2px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .slideDotActive, .slideDotButton:hover{
+        background-color: #717171;
+    }
+    /*fade 설정하기*/
+    .slideFade{ 
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade{
+        from{opacity: .4}
+        to{opacity: 1}
+    }
+    @keyframes fade{
+        from{opacity: .4}
+        to{opacity: 1}
+    }
+    /*----------------------- contents_PC_02 -----------------------*/
+    #contents_PC_02{
+        background-color: #DCDCDC;
+    }
+    #contents_PC_02_container{
+        width: 1200px;  /* 넓이 1600px 고정*/
+        min-width: 1200px; /* 창 크기 줄일시 최소 1200px 유지*/
+        height: 250px; /* 높이 400px 고정*/
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }
+    #iconButton_layout_01{
+        width : 260px;
+        height: 250px;
+    }
+    #iconButton_layout_02{
+        width : 360px;
+        height: 250px;
+    }
+    #iconButton_layout_03{
+        width : 360px;
+        height: 250px;
+    }
+    /*아이콘버튼 제목*/
+    #iconButton_layout_01 > h2,
+    #iconButton_layout_02 > h2,
+    #iconButton_layout_03 > h2{       
+        height: 40px;
+        padding-top: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    /*아이콘버튼 행 정렬*/
+    .iconButton_layout_Box_column{
+        height: 100px;
+        display: flex;
+        flex-direction: column;        
+        gap:10px;
+    }
+    /*아이콘버튼 열 정렬*/
+    .iconButton_layout_Box_row{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }
+
+    /*아이콘 크기*/
+    .iconButton{
+        width:80px;
+        height: 80px;
+        background-size: 80px 80px;
+    }
+    .iconButton_content_certification{
+        width:80px;
+        height: 25px;
+        position: relative;
+        top:50px;
+        background-color: rgba(218,113,113,0.8); 
+        
+        color:#333;        
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    .iconButton_content_class{
+        width:80px;
+        height: 25px;
+        position: relative;
+        top:50px;
+        background-color: rgba(240,255,255,0.8); 
+        
+        color:#333;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding-top: 5px;
+        text-align: center;
+
+    }
+    .iconButton_content_oneday{
+        width:80px;
+        height: 25px;
+        position: relative;
+        top:50px;
+        background-color: rgba(255,179,217,0.8); 
+        
+        color:#333;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding-top: 5px;
+        text-align: center;
+    }
+    /* 아이콘 위에 마우스 올렸을 때 */ 
+    .iconButton:hover{
+        transform: scale(1.1);
+    }   
+    .iconButton:hover > .iconButton_content{
+        color:goldenrod;
+    }
+    
+    /* 상담문의 크기 */
+    #phone{
+        width: 190px;
+        height: 200px;
+        
+        position: relative;
+        top:10px;
+     
+        background-color:#555;
+        border:10px solid #333;
+        color: white;
+    }
+    /* 상담문의 설정*/
+    #phone_text_01, #phone_text_02, #phone_text_03,#phone_text_04{
+        width: 190px;
+        position: relative;
+        margin: 0 auto;
+    }
+    #phone_text_01{
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+        letter-spacing: 2px;
+    }
+    #phone_text_02{
+        text-align: center;
+        font-size: 22px;
+        letter-spacing: 2px;
+        font-family: sans-serif;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #000;
+    }
+    #phone_text_03{
+        padding-top: 5px;
+        font-size: 20px;
+        font-family: sans-serif;
+        line-height: 30px;
+
+        color:goldenrod
+    }
+    #phone_text_04{
+        padding-top: 10px;
+        font-size: 13px;
+        font-family: sans-serif;
+    }
+
+
+    /*----------------------- contents_PC_03 -----------------------*/
+     /* 원데이 달력 */
+
+    #contents_PC_03{
+        
+
+    }
+    #contents_PC_03_container{
+        width: 1200px;  /* 넓이 1200px 고정*/
+        min-width: 1200px; /* 창 크기 줄일시 최소 1200px 유지*/
+        height: 450px; /* 높이 500px 고정*/
+        /* background-color: #e1e1e1; */
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+
+        display: flex;      /*contents_PC_03 열 정렬 */
+        flex-direction: row;
+    }
+    #Oneday_container{
+        width: 300px;   /*원데이 설명 300px 고정*/
+        min-width: 300px;
+        height: 450px;
+
+    }
+    #Oneday_container> h2{
+        font-size: 40px;    /*원데이 설명 제목 크기*/
+        font-weight: 900;
+        text-align: center;
+        margin-top: 25px;
+    }
+    #Oneday_container > #oneday_contents{
+        margin-top: 25px;
+        font-size: 20px;
+        padding-left:20px;
+    }
+    #OnedayCalendar_row{
+        width:900px;   /*원데이 달력 2칸 넓이 900px 고정*/
+        min-width: 900px;
+        height: 450px;
+
+        display: flex;      /*OnedayCalendar 열 정렬 */
+        flex-direction: row;
+    }
+    .OnedayCalendar{
+        width:400px;    /*원데이 달력 넓이 450px 고정*/
+        min-width: 400px;
+        height: 400px;
+        margin: 25px 25px 25px 25px;
+        background-size: 400px 400px;
+    }
+
+    
+    /*----------------------- contents_PC_04 -----------------------*/
+
+    #contents_PC_04{        
+        background-color: #000;
+    }
+    #contents_PC_04_container{
+        width: 1200px;  /* 넓이 1200px 고정*/
+        min-width: 1200px; /* 창 크기 줄일시 최소 1200px 유지*/
+        height: 800px; 
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+    }
+    
+    /* 진행중인 수업 제목 */
+    #class_Theme{
+        height: 100px;
+        text-align: center;
+    }
+    #class_Theme > h2{
+        /*진행중인 클래스 소개*/
+        font-size: 40px;    /*진행중인클래스 설명 제목 크기*/
+        font-weight: 900;
+        padding-top: 20px;
+        padding-left:25px;
+        color: white;
+    }
+
+    #class_ButtonMenu{
+        height: 700px;  /*클래스 세로 2칸 차지하기*/
+    }
+    .class_ButtonMenu_row{
+        height: 350px;  /*contents_PC_02 행의 높이 */
+        display: flex;      /*OnedayCalendar 열 정렬 */
+        flex-direction: row;
+    }
+
+    .class_ButtonMenu_box{
+        width: 300px;
+        min-width:300px; /*슬라이드 넓이*/
+        height: 400px;
+    }
+    /*진행중인 클래스 이미지 크기*/
+    .classButton{
+        width: 250px;
+        min-width:250px; /*슬라이드 넓이*/
+        height: 300px;
+        background-size: 250px 300px;
+
+        border: 2px solid #bbb;
+    }
+    .classButtonbottombox{
+        /*높이 150px*/
+        width:230px;
+        height: 150px;
+        position: relative;
+        top:145px;
+        left: 10px;
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+
+        display: flex;
+        flex-direction: column;
+    }
+    /*마우스 위에 올렸을 때*/
+    .classButton:hover{
+        transform: scale(1.1);
+    }
+    .classButton:hover > a > .classButtonbottombox > li{
+        color:goldenrod;
+    }
+    /*진행중인 클래스 이름*/
+    .classButtonbottombox_text_01{        
+        /*높이 35px*/
+        height: 35px;
+        padding-top:15px;        
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    /*진행중인 클래스 설명*/
+    .classButtonbottombox_text_02{
+        /*높이 35px*/
+        height: 35px;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 12px;
+        padding-bottom: 13px;
+    }
+    /*진행중인 클래스 시간*/
+    .classButtonbottombox_text_03{
+        /*높이 40px*/
+        height: 40px;
+        width: 230px;
+        background-color: rgba(0,0,0,0.9);
+        
+        display: flex;
+        flex-direction: row;
+    }
+    .classButtonbottombox_text_03_01{
+        width: 75px;        
+        color:goldenrod;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 2px;
+    }
+    .classButtonbottombox_text_03_02{
+        font-family: sans-serif;
+        font-size: 15px;
+        padding-top:2px;    
+    }
+    /*구분바 넣기*/
+    .classButtonbottombox_text_03_02::before{
+        content: "|";
+        padding-right: 5px;
+    }
+    
+
+    /*----------------------- contents_PC_05 -----------------------*/
+    #contents_PC_05{
+        
+    }
+    #contents_PC_05_container{
+        width: 1200px;  /* 넓이 1600px 고정*/
+        min-width: 1200px; /* 창 크기 줄일시 최소 1200px 유지*/
+        height: 500px; /* 높이 600px 고정*/
+        /* background-color: #e1e1e1; */
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row;
+    }
+    #event_box{        
+        width: 500px;
+        min-width: 500px;
+        height: 400px;
+        margin-top: 50px;
+
+        border: 5px solid #bbb;
+        border-radius: 5px;
+    }
+    #notification_box{
+        margin-left: 100px;
+        width: 600px;
+        min-width: 600px;
+        height: 400px;
+        margin-top: 50px;
+
+        border: 5px solid #bbb;
+        border-radius: 5px;
+    }
+    #event_box > h2, #notification_box > h2{
+        /*진행중인 클래스 소개*/
+        font-size: 20px;    /*진행중인클래스 설명 제목 크기*/
+        font-weight: 900;
+        padding: 15px 0px 5px 10px;
+        margin: 0 15px;
+        border-bottom: 2px solid #000;
+    }
+
+
+
+
+
+
+    /*----------------------- contents_PC_06 -----------------------*/
+    #contents_PC_06{        
+        background-color: #A9A9A9;
+    }
+    #contents_PC_06_container{        
+        width: 1200px;  /* 넓이 1200px 고정*/
+        min-width: 1200px; /* 창 크기 줄일시 최소 1200px 유지*/
+        height: 700px; /* 높이 650px 고정*/
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+    }
+    #gallery_Theme{
+        height: 100px;
+        text-align: center;
+    }
+    #gallery_Theme > h2{
+        /*갤러리 소개*/
+        font-size: 50px;    /*갤러리 설명 제목 크기*/
+        font-weight: 900;
+        padding-top: 15px;
+        padding-left:25px;
+        color: #000;
+    }
+    #gallery_containner{
+        width: 1200px;  /* 넓이 1200px 고정*/
+        min-width: 1200px; /* 창 크기 줄일시 최소 1200px 유지*/
+        height: 600px; /* 높이 650px 고정*/
+
+        display: flex;
+        flex-direction: row;
+    }
+    #gallery_background{
+        width: 600px;   /*갤러리 큰 사진 넓이*/
+        min-width: 600px;
+        height: 550px;
+        margin-right: 20px;
+        border: 10px solid #fff;
+    }
+    #gallery_collection{
+        width: 550px;
+        min-width: 550px;
+        height: 550px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;   /*세로 간격*/
+    }
+    .gallery_collection_column{
+        width: 550px;
+        min-width: 550px;
+        height: 140px;
+
+        display: flex;
+        flex-direction: row;
+        gap: 10px;  /*가로 간격*/
+    }
+    .gallery_collection_row{
+        width: 125px;   /*갤러리 모음 각각의 사진 넓이*/
+        min-width: 125px;
+        height: 125px;
+
+        background-size: 125px 125px;
+        filter: brightness(40%);
+
+    }
+    .gallery_collection_row:hover{
+        transition: 0.6s ease;
+        transform: scale(1.1);
+        filter: brightness(100%);
+    }
+
+
+
+
+    /*----------------------- contents_PC_07 -----------------------*/
+    #contents_PC_07{   
+        background-color: #8e2525;
+        position: relative;
+        margin: 0 auto;
+    }
+    #contents_PC_07_container{
+        width: 1200px;  /* 넓이 1600px 고정*/
+        min-width: 1200px; /* 창 크기 줄일시 최소 1200px 유지*/
+        height: 551px; /* 높이 600px 고정*/
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+    }
+    #botoom_logo_top{
+        height: 250px;
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+        letter-spacing: 10px;
+
+        position: relative;
+        top:180px;
+        
+    }
+    #botoom_logo_line{
+        height: 51px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    #botoom_logo_line_left{
+        height: 1px;
+        width: 1000px;   
+        min-width: 600px;
+        position: absolute;
+        top:275px;
+        left:0px;
+
+        background: -webkit-linear-gradient(left,rgba(255,255,255,1),rgba(255,255,255,0));
+    }
+    #botoom_logo_line_right{
+        height: 1px;
+        width: 1000px;   
+        min-width: 600px;
+        position: absolute;
+        top:275px;
+        right:0px;
+
+        background: -webkit-linear-gradient(right,rgba(255,255,255,1),rgba(255,255,255,0));
+    }
+    #botoom_logo_line_middle{
+        position:relative;
+        margin:0 auto;
+        padding-bottom:10px;
+        z-index: 99;
+    }
+    #botoom_logo_bottom{
+        height: 250px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        letter-spacing: 15px;
+
+        position: relative;
+        top:20px;
+    }
+
+
+
+
+
+}
+/*----------------------- footer -----------------------*/
+@media screen and (min-width:768px) {
+    #footer_PC{
+        display: fixed;
+        bottom: 0%;
+        height: 150px;
+    }
+    #footer_top_PC{
+        background-color: #000;
+        height: 50px;
+    }
+    #footer_bottom_PC{
+        background-color: #666666;
+        height: 100px;
+    }
+    #footer_menu, #footer_contents{
+        width:1200px;
+        min-width: 1200px;
+        position: relative;
+        margin: 0 auto;
+    }
+    #footer_menu_bar{
+        float:left;
+        width:1000px; /*글자메뉴바 총 넓이 1000px*/
+    }   
+    #footer_menu_bar > ul{
+        display: flex;
+        flex-direction: row;
+    }
+    #footer_menu_bar > ul >li{
+        padding-top: 15px;    /*메뉴 바 간격 조절*/ 
+    }
+
+    #footer_menu_bar > ul >li > a{      
+        text-align: center;  
+        font-size: 13px;
+        color:#fff;
+    }
+    #footer_menu_bar > ul >li:hover{
+        cursor: pointer;
+    }
+    /*구분바 넣기*/
+    #footer_menu_bar > ul ::before{
+        content: "|";
+        padding-right: 30px;
+    }
+    #footer_menu_bar > ul > li:first-child::before{
+        content:none
+    }
+    /*sns 메뉴바*/
+    #footer_menu_sns{
+        float:right;
+        display: flex;
+        flex-direction: row;
+    }
+    #instagram, #blog, #kakao{
+        width:50px;
+        height: 50px;
+    }
+    #instagram{
+        background-color: red;
+    }
+    #blog{
+        background-color: green;
+    }
+    #kakao{
+        background-color: yellow;
+    }
+    #footer_contents{
+        display: flex;
+        flex-direction: row;
+    }
+    #footer_logo{
+        width : 300px;
+        min-width: 300px;
+    }
+    #footer_address{
+        margin-top: 5px;
+        font-size: 12px;
+        color:#bbb;
+    }
+}

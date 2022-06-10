@@ -1,0 +1,388 @@
+/* --------------------------  'mobile버전' 시작------------------------*/
+@media screen and (min-width:0px) and (max-width:767px) {
+/* 360 x 640px를 디폴트로 */
+/* 가로 : 50px = 13.8 %*/
+/* 높이 : 50px = 7.8 %  */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/*  
+/* --------------------------  선택 레이아웃 선택 ---------------------- */
+#gnb_common_Mobile{
+    width: 100%;
+    min-height: 60vh;
+    padding-bottom: 2vh;
+
+    background-color: blanchedalmond;
+
+}
+#gnb_common_Mobile > h2{
+    /* margin-top: 2vh; */
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+    width: 40%;
+    height: 50px;
+    position: relative;
+    left:30%;
+
+    border-bottom: 1px solid #aaa;
+
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color:#333;
+}
+#btn_layout_Mobile{
+    margin-top: 30px;
+    margin-bottom: 7.8vh;
+    display: flex;
+    flex-direction: column;
+    gap:70px;
+
+}
+
+.btn_row_Mobile{
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn_column_2btn_Mobile{
+    width: 150px;
+    height: 150px;
+
+    border: 5px solid dimgray;
+    box-shadow: 2px 2px 2px rgba(170, 170, 170, 0.5);
+    /* box-shadow: 5px 5px 3px rgba(170, 170, 170, 0.5); */
+}
+
+.btn_img_2btn_Mobile{
+    width: 150px;
+    height: 150px;
+    background: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.btn_img_2btn_Mobile > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.btn_name_2btn_Mobile{
+    position: relative;
+    width: 100px;
+    left: 25px;
+    top: -10px;
+    height: 40px;        
+    background-color: #fff;
+    border: 1px solid #aaa;
+    box-shadow: 5px 5px 3px rgba(170, 170, 170, 0.5);;
+}
+
+.btn_name_2btn_Mobile > h4 {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+
+    color: #555;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100%;
+}
+/* 원데이클래스 달력 */
+#oneday_schedule_Mobile{
+    width: 100%;
+    position: relative;
+    background-color: rgba(250,235,215,0.8);
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+#oneday_schedule_Mobile > h2{
+
+    /* margin-top: 30px; */
+    width: 100%;
+    height: 50px;
+    padding-bottom: 10px;
+
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color:#333;
+
+}
+#oneday_schedule_layout_Mobile{
+    position: relative;
+    width: 100%;
+    /* height: 730px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:10px;
+
+}
+.oneday_schedule_Calendar_Mobile{
+    /* width: 350px;
+    height: 350px; */
+    width: 85%;
+    padding-bottom: 85%;
+    margin: 0 auto;
+    background: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
+
+}   
+/* --------------------------  'PC버전' 시작--------------------------- */
+@media screen and (min-width:768px){
+    /* --------------------------  gnb 공통 시작 -------------------------- */
+        #contents_PC_gnb{
+            width:1200px;
+            min-width: 1200px;
+            position: relative;
+            margin: 0 auto;
+    
+            display: flex;
+            flex-direction: row;
+        }
+    
+    
+        /* gnb_nav_bar 설정 */
+        #contents_PC_gnb_nav{
+            width:180px;
+            border-right: 1px solid #000;
+        }
+        #gnb_nav_bar{
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #555;
+            top:40px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        #nav_gnb_bar_theme{
+            width:150px;
+            height: 24px;
+            font-size: 15px;
+            color:#fff;
+            background-color: #555;
+            font-weight: 800;
+            text-align: center;
+            padding-top: 7px;
+        }
+        .gnb_nav_bar_menu{
+            width:150px;
+            height: 24px;
+            font-size: 15px;
+            padding-top: 7px;
+            font-weight: 800;
+            text-align: center;
+            color:#555;
+            border-top: 1px solid #555;
+        }
+        .gnb_nav_bar_menu:hover{
+            color: #fff;
+            background-color: #555;
+        }
+    
+        /* 컨텐츠 설정 */
+        #contents_PC_gnb_contents{
+            margin-left: 20px;
+            width:1000px;
+        }
+
+    /* --------------------------  gnb 공통 종료 -------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  선택 레이아웃 선택 ---------------------- */
+    #gnb_common_PC{
+        width: 1000px;
+        /* min-height: 1000px; */
+        padding-bottom: 100px;
+    }
+    #gnb_common_PC > h2{
+        margin-top: 20px;
+        width: 1000px;
+        height: 100px;
+
+        line-height: 100px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 800;
+        color:#333;
+
+    }
+    #gnb_common_PC > h3{
+        margin-top: 10px;
+        width: 1000px;
+        height: 80px;
+
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        color: #777;
+
+    }
+    
+    
+    #btn_layout_PC{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+    }
+    .btn_row_PC{
+        margin-left: 50px;
+        width: 900px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .btn_column_4btn_PC{
+        width: 200px;
+        height: 320px;
+    }
+    .btn_column_3btn_PC{
+        width: 300px;
+        height: 320px;
+    }
+
+
+    .btn_img_4btn_PC{
+        width: 200px;
+        height: 200px;
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    .btn_img_3btn_PC{
+        width: 250px;
+        height: 250px;
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+
+
+    .btn_column_3btn_PC > a, .btn_column_4btn_PC > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .btn_name_4btn_PC{
+        position: relative;
+        width: 150px;
+        left: 25px;
+        top: -30px;
+        height: 100px;        
+        background-color: #fff;
+        border: 1px solid #aaa;
+        box-shadow: 5px 5px 3px rgba(170, 170, 170, 0.5);;
+    }
+    .btn_name_3btn_PC{
+        position: relative;
+        width: 200px;
+        left: 25px;
+        top: -30px;
+        height: 100px;        
+        background-color: #fff;
+        border: 1px solid #aaa;
+        box-shadow: 5px 5px 3px rgba(170, 170, 170, 0.5);;
+    }
+
+    .btn_name_3btn_PC > h4 {
+        margin-top: 10px;
+        width: 200px;
+        height: 40px;
+
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 40px;
+    }
+    .btn_name_4btn_PC > h4 {
+        margin-top: 10px;
+        width: 150px;
+        height: 40px;
+
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    .btn_name_4btn_PC > h5{
+        /* margin-top: 5px; */
+        width: 150px;
+        height: 20px;
+
+        color: #555;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 20px;
+    }
+    .btn_name_3btn_PC > h5{
+        margin-top: 5px;
+        width: 200px;
+        height: 20px;
+
+        color: #555;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 20px;
+    }
+    /* 원데이클래스 달력 */
+    #oneday_schedule_PC{
+        width: 1000px;
+        position: relative;
+        background-color: rgba(250,235,215,0.8);
+
+    }
+    #oneday_schedule_PC > h2{
+
+        margin-top: 20px;
+        width: 1000px;
+        height: 80px;
+
+        line-height: 80px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 800;
+        color:#333;
+    }
+    #oneday_schedule_layout_PC{
+        position: relative;
+        width: 1000px;
+        height: 440px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    .oneday_schedule_Calendar_PC{
+        width: 400px;
+        height: 400px;
+        top: 50px;
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+}

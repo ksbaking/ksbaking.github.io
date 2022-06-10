@@ -1,0 +1,622 @@
+/* --------------------------  'mobile버전' 시작 ------------------------------ */
+/* 360 x 640px를 디폴트로 */
+/* 가로 : 50px = 13.8 %*/
+/* 높이 : 50px = 7.8 %  */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/* --------------------------  container 시작 -------------------------- */
+@media screen and (min-width:0px) and (max-width:767px) {
+
+    /* --------------------------  '공통부분' 시작 ---------------------------- */
+       
+    /* 오후반, 저녁반 */
+    #container_Mobile #bakery_Mobile_01, 
+    #container_Mobile #confectionery_Mobile_01, 
+    #container_Mobile #tteok_Mobile_01{
+        width: 100%;
+        /* height: 800px; */
+
+        display: flex;
+        flex-direction: column;
+        
+        background-color: #aaa;
+        padding-bottom: 50px;
+    }
+    #container_Mobile #class_Theme{
+        height: 100px;
+    }
+    #container_Mobile #class_Theme > h1{    
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 900;
+    }
+    #container_Mobile #class_Theme > h2{
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+        font-weight: none;
+    }
+    #container_Mobile #class_introduce,
+    #container_Mobile #class_introduce_tteok{
+        /* height: 620px; */
+
+        display: flex;
+        flex-direction: column;
+
+    }
+    #container_Mobile .class_introduce,
+    #container_Mobile .class_introduce_tteok{
+        width: 100%;
+        /* height: 420px; */
+        /* font-size: 15px; */
+        color: #fff;
+        text-align: center;
+        
+    }
+    #container_Mobile .class_introduce > h3,
+    #container_Mobile .class_introduce_tteok > h3{
+        /* position: relative;
+        left:50px; */
+        margin-top: 0;
+
+        width: 100%;
+        font-size: 16px;
+    }
+    #container_Mobile .class_time,
+    #container_Mobile .class_time_tteok{
+        width: 50%;
+        height: 70px;
+        position: relative;
+        left:25%;
+        top:30px;
+
+        background-color: rgba(165,42,42,0.7);
+        text-align: center;
+        line-height: 70px;
+        color: #fff;
+        /* padding-top: 20px; */
+        font-size: 30px;
+        font-weight: 800;
+        z-index: 2;
+    }
+    #container_Mobile .class_img,
+    #container_Mobile .class_img_tteok{
+        position: relative;
+        width: 80%;
+        height: 60vw;
+        left:10%;
+        /* top:40px; */
+        z-index: 1;
+
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    #container_Mobile .class_introduce > h2,
+    #container_Mobile .class_introduce_tteok > h2{
+        font-size: 20px;
+        color: #fff;
+        font-weight: 800;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* 시험정보 */
+    .bakery_Mobile_02, #confectionery_Mobile_02, #tteok_Mobile_02{
+        /* height: 1300px; */
+    }
+    .bakery_Mobile_02 > h2, #confectionery_Mobile_02 > h2, #tteok_Mobile_02 > h2 {
+        height: 70px;
+        font-size: 30px;
+        font-weight: 900;
+        padding-top: 20px;
+        text-align: center;
+    }
+    #container_Mobile .test_information{
+        height: 330px;
+        display: flex;
+        flex-direction: row;
+        /* gap:10px; */
+        justify-content: space-around;
+    }
+    #container_Mobile .test_information_box{
+        width: 40%;
+        height: 300px;
+        background-color: #fff;
+        box-shadow: 5px 5px 3px rgba(10, 10, 10, 0.5);
+        border:1px solid #aaa;
+    }
+    #container_Mobile .test_information_theme{
+        height: 90px;
+    }
+    #container_Mobile .test_information_number{
+        /* margin-top: 10px; */
+        width: 40px;
+        height: 40px;
+        background-color: #aaa;
+        border-radius: 50%;
+        position: relative;
+        /* left: 70px; */
+        margin: 10px auto;
+        
+        text-align: center;
+        line-height: 40px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px; 
+        color: #fff;
+    }
+    #container_Mobile .test_information_theme_contents{
+        margin-top: 10px;
+        height: 30px;
+
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+    }
+    #container_Mobile .test_information_contents > a{
+        display: block;
+        width: 120px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    #container_Mobile #qnetimg{
+        padding-top: 10px;
+        position: relative;
+        /* top:-20px; */
+        left:20px;
+    }
+    #container_Mobile #qnet{
+        position: relative;
+        /* top:-20px; */
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    #container_Mobile .test_information_line{
+        width: 70%;
+        height: 2px;
+        position: relative;
+        left:15%;
+        border-bottom: 1px solid #aaa;
+    }
+    #container_Mobile .test_information_contents{
+        margin-top: 10px;
+        height: 60px;
+    }
+    #container_Mobile .test_information_contents_theme{
+        height: 20px;
+        font-size: 18px;
+        text-align: center;
+        color: brown;
+        font-weight: 800;
+    }
+    #container_Mobile .test_information_contents_text{
+        margin-top: 10px;
+        color: #999;
+        font-weight: 700;
+        height: 40px;
+        font-size: 16px;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    /* 품목 정보 */
+    #bakery_Mobile_03, #confectionery_Mobile_03, #tteok_Mobile_03{
+        width: 100%;
+        /* height: 850px; */
+        background-color: #aaa;
+        /* margin-bottom: 10px; */
+        padding-bottom: 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+    }
+    #bakery_Mobile_03 > h2, #confectionery_Mobile_03 > h2, #tteok_Mobile_03 > h2 {
+        font-size: 30px;
+        font-weight: 900;
+        color: #fff;
+        /* color:darkred; */
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #container_Mobile .practice_row, 
+    #container_Mobile .practice_row_tteok{
+        width: 100%;
+        /* height: 150px; */
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-around;
+    }
+    #container_Mobile .practice_column,
+    #container_Mobile .practice_column_tteok{
+        width: 20%;
+        height: 20vw;
+        background-color: #555;
+        background: no-repeat;
+        background-size: 100% 100%;
+        border: 2px solid #fff;
+    }
+    #container_Mobile .practice_item_name,
+    #container_Mobile .practice_item_name_tteok{
+        width: 100%;
+        height: 6vw;
+        position: relative;
+        top:14vw;
+        background-color: rgba(255,255,255,0.6);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        font-weight: 900;
+        text-align: center;
+        color:#444;
+    }
+    #container_Mobile .practice_item_name_except{
+        width: 100%;
+        height: 6vw;
+        position: relative;
+        top:14vw;
+        background-color: rgba(255,255,255,0.6);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 10px;
+        font-weight: 900;
+        text-align: center;
+        color:#333;
+
+    }
+
+    
+}
+/* --------------------------  'PC버전' 시작 ------------------------------ */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/* --------------------------  'PC버전' 시작--------------------------- */
+@media screen and (min-width:768px){
+    /* --------------------------  '공통부분' 시작 ---------------------------- */
+    /* 오후반, 저녁반 */
+    #bakery_PC_01, #confectionery_PC_01, #tteok_PC_01{
+        height: 800px;
+
+        display: flex;
+        flex-direction: column;
+        
+        background-color: #aaa;
+    }
+    #container_PC #class_Theme{
+        height: 80px;
+    }
+    #container_PC #class_Theme > h1{    
+        color: #fff;
+        font-size: 50px;
+        text-align: center;
+        font-weight: 900;
+    }
+    #container_PC #class_Theme > h2{
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+        font-weight: none;
+    }
+    #container_PC #class_introduce{
+        height: 620px;
+
+        display: flex;
+        flex-direction: row;
+
+    }
+    #container_PC .class_introduce{
+        width: 500px;
+        height: 420px;
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+        
+    }
+    #container_PC .class_introduce > h3{
+        position: relative;
+        left:50px;
+        margin-top: 0;
+
+        width: 400px;
+        font-size: 17px;
+    }
+    #container_PC .class_time{
+        width: 300px;
+        height: 70px;
+        position: relative;
+        left:100px;
+        top:80px;
+
+        background-color: rgba(165,42,42,0.7);
+        text-align: center;
+        color: #fff;
+        padding-top: 20px;
+        font-size: 30px;
+        font-weight: 800;
+        z-index: 2;
+    }
+    #container_PC .class_img{
+        position: relative;
+        width: 400px;
+        height: 300px;
+        left:50px;
+        top:40px;
+        z-index: 1;
+    }
+    #container_PC .class_introduce > h2{
+        font-size: 30px;
+        color: #fff;
+        font-weight: 800;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* 시험정보 */
+    #bakery_PC_02, #confectionery_PC_02, #tteok_PC_02{
+        height: 650px;
+    }
+    #bakery_PC_02 > h2, #confectionery_PC_02 > h2, #tteok_PC_02 > h2 {
+        height: 80px;
+        font-size: 30px;
+        font-weight: 900;
+        padding-top: 40px;
+        text-align: center;
+    }
+    #container_PC #test_information{
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        justify-content: space-around;
+    }
+    #container_PC .test_information_box{
+        width: 200px;
+        height: 440px;
+        background-color: #fff;
+        box-shadow: 5px 5px 3px rgba(10, 10, 10, 0.5);
+        border:1px solid #aaa;
+    }
+    #container_PC .test_information_theme{
+        height: 130px;
+    }
+    #container_PC .test_information_number{
+        margin-top: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #aaa;
+        border-radius: 50%;
+        position: relative;
+        left: 70px;
+        
+        text-align: center;
+        line-height: 50px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 40px; 
+        color: #fff;
+    }
+    #container_PC .test_information_theme_contents{
+        margin-top: 10px;
+        height: 38px;
+
+        font-size: 25px;
+        font-weight: 900;
+        text-align: center;
+    }
+    #container_PC #qnetimg{
+        padding-top: 10px;
+        position: relative;
+        top:-20px;
+        left:60px;
+    }
+    #container_PC #qnet{
+        position: relative;
+        top:-20px;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    #container_PC .test_information_line{
+        width: 140px;
+        height: 2px;
+        position: relative;
+        left:30px;
+        border-bottom: 1px solid #aaa;
+    }
+    #container_PC .test_information_contents{
+        margin-top: 10px;
+        height: 290px;
+    }
+    #container_PC .test_information_contents_theme{
+        height: 40px;
+        font-size: 25px;
+        text-align: center;
+        color: brown;
+        font-weight: 800;
+    }
+    #container_PC .test_information_contents_text{
+        height: 80px;
+        font-size: 20px;
+        color: #999;
+        font-weight: 700;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+
+
+
+    /* 품목 정보 */
+    #bakery_PC_03, #confectionery_PC_03{
+        width: 1000px;
+        height: 850px;
+        background-color: #aaa;
+        margin-bottom: 10px;
+
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    #bakery_PC_03 > h2, #confectionery_PC_03 > h2{
+        font-size: 30px;
+        font-weight: 900;
+        color: #fff;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    #container_PC .practice_row{
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-around;
+    }
+    #container_PC .practice_column{
+        width: 160px;
+        height: 160px;
+        background-color: #555;
+        background: no-repeat;
+        background-size: 100% 100%;
+        border: 5px solid #fff;
+    }
+    #container_PC .practice_item_name{
+        width: 160px;
+        height: 35px;
+        position: relative;
+        top:115px;
+        background-color: rgba(255,255,255,0.6);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 10px;
+        color:#444;
+    }
+    #container_PC .practice_item_name_except{
+        width: 160px;
+        height: 45px;
+        position: relative;
+        top:115px;
+        background-color: rgba(255,255,255,0.6);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 5px;
+        color:#333;
+
+    }
+    /* --------------------------  '떡제조기능사' 일부수정 ---------------------------- */
+    /* 반개설 수정*/
+    #container_PC #class_introduce_tteok{
+        height: 620px;
+
+    }
+    #container_PC .class_introduce_tteok{
+        width: 1000px;
+        height: 420px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        
+    }
+    #container_PC .class_introduce_tteok > h3{
+        position: relative;
+        left:200px;
+        margin-top: 0;
+
+        width: 600px;
+        font-size: 17px;
+    }
+    #container_PC .class_time_tteok{
+        width: 400px;
+        height: 70px;
+        position: relative;
+        left:300px;
+        top:80px;
+
+        background-color: rgba(165,42,42,0.7);
+        text-align: center;
+        color: #fff;
+        padding-top: 20px;
+        font-size: 30px;
+        font-weight: 800;
+        z-index: 2;
+    }
+    #container_PC .class_img_tteok{
+        position: relative;
+        width: 900px;
+        height: 300px;
+        left:50px;
+        top:40px;
+        z-index: 1;
+    }
+    #container_PC .class_introduce_tteok > h2{
+        font-size: 30px;
+        color: #fff;
+        font-weight: 800;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /* 품목 정보 */
+    #tteok_PC_03{
+        width: 1000px;
+        height: 600px;
+        background-color: #aaa;
+        margin-bottom: 10px;
+
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    #tteok_PC_03 > h2{
+        font-size: 30px;
+        font-weight: 900;
+        color: #fff;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    #container_PC .practice_row_tteok{
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-around;
+    }
+    #container_PC .practice_column_tteok{
+        width: 200px;
+        height: 200px;
+        background-color: #555;
+        background: no-repeat;
+        background-size: 100% 100%;
+        border: 5px solid #fff;
+    }
+    #container_PC .practice_item_name_tteok{
+        width: 200px;
+        height: 40px;
+        position: relative;
+        top:155px;
+        background-color: rgba(255,255,255,0.6);
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 10px;
+        color:#000
+    }
+}

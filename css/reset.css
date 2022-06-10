@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* 기본스타일 초기화 */
+body,header,footer,p,h1,h2,h2,h4,h5,h6,ul,ol,li,form,div, span, applet, object, iframe, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu,
+fieldset, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+    margin:0;
+    padding:0;
+    font-family: verdana,arial;
+    font-size: 10px;
+	vertical-align: baseline;
+    font-family: Georgia, verdana, sans-serif;
+}
+img, label,input,textarea,select,button,a{
+    margin:0;
+    padding:0;
+    font-family: verdana,arial;
+    font-size: 10px;
+	vertical-align: middle; 
+    /* 인라인요소들의 높이가 틀어지는 현상을 잡기 위해 */
+    font-family: Georgia, verdana, sans-serif;
+}
+
+/* 버튼커서 */
+button{
+    cursor: pointer;
+}
+
+/* border 속성 제거 */
+img, fieldset,input,select,textarea.buttion{
+    border: none;
+}
+
+/* 불릿 제거 */
+menu, ol, ul {
+	list-style: none;
+}
+
+/* table 초기화 */
+table {
+    width:100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 링크 초기화 */
+a{text-decoration: none}
+a:hover,a:active,a:focus{text-decoration: none}
+
+/* 기울임, 진한글씨 속성값을 가진 요소 초기화 */
+address, cite, code, em{
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+} */
+/* HTML5 hidden-attribute fix for newer browsers */
+/* *[hidden] {
+    display: none;
+}
+body {
+	line-height: 1;
+} */
+
+/* blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+} */
+

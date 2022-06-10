@@ -1,0 +1,852 @@
+/* 360 x 640px를 디폴트로 */
+/* 가로 : 50px = 13.8 %*/
+/* 높이 : 50px = 7.8 %  */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/* --------------------------  header 시작 -------------------------- */
+@media screen and (min-width:0px) and (max-width:767px) {
+    #header_wrap{
+        /* position:fixed; 메뉴바 위치 상단 고정 */
+        position:sticky;/* 메뉴바 위치 상단 고정 */
+        top:0;
+        background-color: white;    /*스크롤바 내릴때 메뉴바 보이는것 제거*/
+        z-index:99; /*메뉴바 맨위로 보이기 고정*/
+    }
+    
+    /* 헤더top 부분*/
+    #header_top_Mobile{ 
+        width: 100%;
+        height: 9vh;
+        background-color: #8e2525;
+        position: relative;
+    }
+    #header_top_Mobile_container{
+        width: 100%;
+        height: 9vh; /* 높이 600px 고정*/
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+    }
+    #botoom_logo_top{
+        height: 3vh;
+        text-align: center;
+        color: #fff;
+        font-size: 0.7rem;
+        line-height: 3vh;
+
+        
+    }
+    #botoom_logo_line{
+        height: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #botoom_logo_line_left{
+        height: 1px;
+        width: 50%;
+        position: absolute;
+        top:50%;
+        left:0;
+
+        background: -webkit-linear-gradient(left,rgba(255,255,255,1),rgba(255,255,255,0));
+    }
+    #botoom_logo_line_right{
+        height: 1px;
+        width: 50%;
+        position: absolute;
+        top:50%;
+        right:0;
+
+        background: -webkit-linear-gradient(right,rgba(255,255,255,1),rgba(255,255,255,0));
+    }
+    #botoom_logo_line_middle{
+        
+        display: flex;
+        justify-content: center;
+        /* position:relative; */
+        /* bottom:3px; */
+        margin:0 auto;
+        z-index: 99;
+    }
+    #botoom_logo_bottom{
+        height: 4vh;
+        text-align: center;
+        color: #fff;
+        font-size: 0.7rem;
+        letter-spacing: 5px;
+        line-height: 4vh;
+
+    }
+
+    #toggleMenu, #contactMenu_layout{
+        position: absolute;
+        top:1vh;
+    }
+    /* 토글메뉴 설정 */
+    #toggleMenu{
+        /* width: 40px; */
+        /* height: 40px; */
+        left:3%;
+        /* background-color: #555; */
+    }
+    /* 토글 버튼 설정 */
+    #toggleMenu_btn{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+    }
+    #togglebtn_line_top, #togglebtn_line_middle, #togglebtn_line_bottom {
+        position: absolute;
+        display: block;
+        height: 3px;
+        width: 30px;
+        border-radius: 3px;
+        background: #fff;
+    }
+    #togglebtn_line_top{
+        top: 7px;
+        left: 5px;
+        -webkit-transform-origin: 30px 5px;
+        transform-origin: 30px 5px;
+    }
+    #togglebtn_line_middle{
+        top: 17px;
+        left: 5px;
+        -webkit-transition: opacity 200ms linear;
+        transition: opacity 200ms linear;
+
+    }
+    #togglebtn_line_bottom{
+        top: 28px;
+        left: 5px;
+        -webkit-transform-origin: 30px 5px;
+        transform-origin: 30px 5px;
+    }
+    #toggleMenu_btn.is-open #togglebtn_line_top{
+        -webkit-animation: line-top-out 600ms linear normal;
+        animation: line-top-out 600ms linear normal;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    #toggleMenu_btn.is-open #togglebtn_line_middle{
+        opacity: 0;
+    }
+    #toggleMenu_btn.is-open #togglebtn_line_bottom{
+        -webkit-animation: line-bot-out 600ms linear normal;
+        animation: line-bot-out 600ms linear normal;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    #toggleMenu_btn.is-closed #togglebtn_line_top{
+        -webkit-animation: line-top-in 600ms linear normal;
+        animation: line-top-in 600ms linear normal;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    #toggleMenu_btn.is-closed #togglebtn_line_middle{
+        -webkit-transition-delay: 200ms;
+        transition-delay: 200ms;
+    }
+    #toggleMenu_btn.is-closed #togglebtn_line_bottom{
+        -webkit-animation: line-bot-in 600ms linear normal;
+        animation: line-bot-in 600ms linear normal;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+    }
+    /* 토글바 x로 회전 설정 */
+    @-webkit-keyframes line-top-in{
+        0%{
+            left:5px;
+            bot: -5px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+        20%{
+            left:5px;
+            bot: -5px;
+            -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+        }
+        80%{
+            left: 5px;
+            bot: -5px;
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+        }
+        100%{
+            left:5px;
+            bot: -4px;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes line-top-in{
+        0%{
+            left:5px;
+            bot: -5px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+        20%{
+            left:5px;
+            bot: -5px;
+            -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+        }
+        80%{
+            left: 5px;
+            bot: -5px;
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+        }
+        100%{
+            left:5px;
+            bot: -4px;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+    }
+    @-webkit-keyframes line-top-out{
+        0%{
+            left:3px;
+            bot: -5px;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        20%{
+            left:3px;
+            bot: -5px;
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+        }
+        80%{
+            left: 3px;
+            bot: -5px;
+            -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+        }
+        100%{
+            left:3px;
+            bot: -4px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    }
+    @keyframes line-top-out{
+        0%{
+            left:3px;
+            bot: -5px;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        20%{
+            left:3px;
+            bot: -5px;
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+        }
+        80%{
+            left: 3px;
+            bot: -5px;
+            -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+        }
+        100%{
+            left:3px;
+            bot: -4px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    }
+
+    @-webkit-keyframes line-bot-in{
+        0%{
+            left:0px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        20%{
+            left:0px;
+            bot: -5px;
+            -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+        }
+        80%{
+            left: 5px;
+            bot: -5px;
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+        }
+        100%{
+            left:5px;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+    }
+    @keyframes line-bot-in{
+        0%{
+            left:0px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        20%{
+            left:0px;
+            bot: -5px;
+            -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+        }
+        80%{
+            left: 5px;
+            bot: -5px;
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+        }
+        100%{
+            left:5px;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+    }
+    @-webkit-keyframes line-bot-out{
+        0%{
+            left:3px;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        20%{
+            left:3px;
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+        }
+        80%{
+            left: -2px;
+            -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+        }
+        100%{
+            left:-2px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+    @keyframes line-bot-out{
+        0%{
+            left:3px;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        20%{
+            left:3px;
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+        }
+        80%{
+            left: -2px;
+            -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+        }
+        100%{
+            left:-2px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+    /* 토글 1단계 레벨 */
+    #toggleMenu_wrap{
+        margin-top: 2px;
+        width: 150px;
+        display: none;
+    }
+    /* 토글 2단계 레벨 */
+    .togglemenu_sub_wrap{
+        display: none;
+    }
+    .toggleMenu{
+        width: 150px;
+    }
+    .toggleMenu_gnb{
+        width: 150px;
+        height: 40px;
+
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 40px;
+        color:#ccc;
+        background-color: #555;
+        border-bottom: 1px solid #bbb;
+    }
+    .togglemenu_sub > a{
+        display: block;
+        width: 150px;
+        height: 40px;
+    }
+    .togglemenu_sub{
+        width: 130px;
+        padding-left: 20px;
+        height: 40px;
+        background-color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 40px;
+        color:#888;
+        border-bottom: 1px solid #555;
+    }
+    /* 카카오연결, 전화연결 설정 */
+    #contactMenu_layout{
+        right: 3%;
+        width:90px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #kakao{
+        position: relative;
+        top:2px;
+        left: 3px;
+        width: 36px;
+        height: 36px;
+        background-color: #555;
+        background: no-repeat;
+        background-size: 100% 100%; 
+        border-radius: 5px;
+    }
+    #phone{
+        width: 40px;
+        height: 40px;
+        background-color: #555;
+        background: no-repeat;
+        background-size: 100% 100%; 
+    }
+
+    /* gnb 부분 */
+    #gnb_mobile{
+        width: 100%;
+        height: 4vh;
+        
+        background-color: #333;
+    }
+    #menu_bar_Mobile{
+        width: 100%;
+        height: 4vh;
+        display: flex;/* 메뉴바 수평정렬 */
+        flex-direction: row;
+    }
+    #menu_bar_Mobile > a{
+        width: 33%;
+        height: 4vh;
+    }
+    .mobile_Menu{
+        width: 100%;
+        height: 4vh;
+        color:#ddd;
+        font-size : 0.8rem;
+        font-weight: 700;
+        text-align:center;
+        line-height: 4vh;
+    }
+    .mobile_Menu:hover{
+        background-color: #fff;
+        color: #555;
+    }
+
+}
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/* --------------------------  header 종료 -------------------------- */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/* ------------------------  container_wrap 시작 -------------------- */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+@media screen and (min-width:0px) and (max-width:767px) {
+    /*----------------------- section_Mobile_01 --------------------------*/
+    /* 슬라이드 */
+    #container_Mobile > #section_Mobile_01{
+        width: 100%;
+    }
+    .slide_container_Mobile{
+        width: 100%;
+        height: 30vh;
+        position: relative; /* <> 버튼 위치 고정을 위해 필요*/
+    }
+    .slideImg_Mobile{
+        background-color: #000;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    /* 슬라이드 <> 버튼 설정 */
+    #prev_Mobile, #next_Mobile{   
+        cursor: pointer;   /* <>버튼 커서 보기*/
+        position: absolute; /* <>버튼 위치*/
+        top: 40%; /* <>버튼 세로 가운데 정렬*/
+        padding: 1.0rem;  /* <>버튼여백 크기*/
+        color: #fff;    /* <>버튼 색*/
+        font-weight: bold; /* <>버튼 굵기*/
+        font-size: 0.8rem; /* <>버튼 사이즈*/
+        background-color: rgba(0,0,0,0.3); /* <>버튼 배경 연하게*/
+        transition: 0.6s ease;  user-select: none;
+    }
+    #prev_Mobile{
+        left:5%;  /* < 버튼 왼쪽 정렬 */
+    }
+    #next_Mobile{
+        right:5%; /* > 버튼 오른쪽 정렬 */
+    }
+    #prev_Mobile:hover, #next_Mobile:hover {
+        background-color: rgba(0,0,0,0.8); /* <> 버튼 선택시 진하게 */
+    }
+    /* 슬라이드 번호 설정 */
+    .slideNumber_Mobile{
+        color: #f2f2f2;
+        font-size:0.8rem;
+        font-weight: 700;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 8px 12px;
+        position: absolute;
+    }
+     /*슬라이드 도트(dot) 설정*/
+    #slidesDot_Mobile{
+        width: 100%;
+        height: 4vh;
+        background-color: #555;
+        position:relative;
+        text-align: center;
+    }
+    .slideDotButton_Mobile{   
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin-top: 1vh;
+        margin-left: 2px;
+        margin-right: 2px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .slideDotActive_Mobile, .slideDotButton_Mobile:hover{
+        background-color: #717171;
+    }
+    /*fade 설정하기*/
+    .slideFade_Mobile{ 
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade{
+        from{opacity: .4}
+        to{opacity: 1}
+    }
+    @keyframes fade{
+        from{opacity: .4}
+        to{opacity: 1}
+    }
+    /*----------------------- section_Mobile_02 --------------------------*/
+    /* 아이콘메뉴바 */
+    #section_Mobile_02{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+    }
+    #MobileIconMenu_layout{
+        position: relative;
+        left:5%;
+        width: 90%;
+
+        display: flex;
+        justify-content: space-around;
+    }
+    #MobileIconMenu_layout > a{
+        display: block;
+        width: 20%;
+        /* height: 80px; */
+    }
+    .MobileIconMenu_btn{
+        width: 100%;
+        height: 80px;
+    }
+
+    .Iconbox_Mobile{
+        position: relative;
+        /* left:10%; */
+        /* width: 80%; */
+        height: 56px;
+        
+        background:center no-repeat;
+        background-size: 40px 40px;
+    }
+    .Iconbox_contents_Mobile{
+        position: relative;
+        /* top:56px; */
+        color:#777;
+        text-align: center;
+        line-height: 24px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    /*----------------------- section_Mobile_03 --------------------------*/
+    /* 진행중인 수업 */
+    #section_Mobile_03{
+        background-color: #bbb;
+        height: 100vh;
+    }
+    #section_Mobile_03 > h2{        
+        width: 100%;
+        height: 6vh;
+        line-height: 6vh;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 800;
+        color:brown;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #class_ButtonMenu{
+        width: 100%;
+    }
+    .class_ButtonMenu_row{
+        margin-top: 2vh;
+        margin-left: 5%;
+        width: 90%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .class_ButtonMenu_box{
+        width: 45%;
+        height: 21vh;
+
+    }
+    /*진행중인 클래스 이미지 크기*/
+    .classButton{
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+
+        border: 2px solid #888;
+    }
+    .classButtonbottombox{
+        width:100%;
+        height: 14vh;
+        position: relative;
+        top:7vh;
+        /* left: 10px; */
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .classButtonbottombox_text_01{
+        padding-top: 1vh;
+        width: 100%;
+        height: 4vh;;        
+        text-align: center;
+        line-height: 4vh;
+
+        font-size: 1.0rem;
+        color:#fff;
+        font-weight: 700;
+    }
+    .classButtonbottombox_text_column{
+        display: flex;
+        flex-direction: row;
+    }
+    .classButtonbottombox_text_03{
+        width: 50%;
+        height: 6vh;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .classButtonbottombox_text_03_01{
+        width: 100%;        
+        color:goldenrod;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    .classButtonbottombox_text_03_02{
+        font-family: sans-serif;
+        width: 100%;        
+        color:#fff;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    /*구분바 넣기*/
+    /* .classButtonbottombox_text_03_02::before{
+        content: "|";
+        padding-right: 5px;
+    } */
+    /*----------------------- section_Mobile_04 --------------------------*/
+    /* 원데이클래스 달력 */
+    #section_Mobile_04{
+        background-color: #fff;
+        height: 94vh;
+    }
+    #section_Mobile_04 > h2{
+        width: 100%;
+        height: 6vh;
+        line-height: 6vh;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #777;
+        font-weight: 800;
+    }
+    .OnedayCalendar_layout{
+        width: 100%;
+        height: 40vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+    }
+    .OnedayCalendar{
+        width:80%;
+        height: 38vh;
+        background:no-repeat;
+        background-size: 100% 100%;
+        border: 3px solid #aaa;
+    }
+    #OnedayClass_All{
+        width: 100%;
+        height: 8vh;
+        text-align: center;
+    }
+    #OnedayClass_All > a{
+        display: block;
+        width: 50%;
+        margin-left: 25%;
+        height: 4vh;
+        margin-top: 1vh;
+        border: 1px solid #555;
+        color:#000;
+        text-align: center;
+        line-height: 4vh;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    /*----------------------- section_Mobile_05 --------------------------*/
+    /* 공지사항-비워두기 */
+
+
+
+
+    /*----------------------- section_Mobile_06 --------------------------*/
+    /* 시설사진(Gallery) */
+    #section_Mobile_06{
+        width: 100%;
+        height: 520px;
+        background-color: #A9A9A9;
+    }
+
+    #section_Mobile_06 > h2{
+        width: 100%;
+        height: 6vh;
+        line-height: 6vh;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+    #gallery_mobile_layout{
+        margin-left: 1%;
+        width: 98%;
+        height: 47vh;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    .gallery_mobile_row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .gallery_mobile_column{
+        width: 140px;
+        height: 140px;
+        background: no-repeat;
+        background-size: 100% 100%;
+        border: 1px solid #bbb;
+    }
+
+
+
+
+
+
+
+    /*----------------------- bottom 모바일 버전 --------------------------*/
+    #bottom_wrap{
+        position:sticky;
+        width: 100%;
+        height: 5vh;
+        bottom:0;
+        z-index:2;
+
+        display: flex;
+        flex-direction: row;
+    }
+    #bottom_wrap > a{
+        width: 50%;
+        height: 5vh;
+    }
+    .bottom_menu{
+        width: 100%;
+        height: 5vh;
+        line-height: 5vh;
+        text-align: center;
+        color: #ddd;
+        font-size: 1.0rem;
+        
+        background-color: #777;
+        border: 1px solid #aaa;
+    }
+}
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/* ------------------------  container_wrap 종료 -------------------------- */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/* ------------------------  footer_wrap 시작    -------------------- */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+@media screen and (min-width:0px) and (max-width:767px) {
+    #footer_mobile{
+        background-color: #666666;
+    }
+    #footer_logo{
+        margin-left: 1%;
+        padding-top: 1vh;
+        width: 98%;
+        height: 10vh;
+
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    #footer_address{        
+        margin-left: 1%;
+        width: 98%;
+        height: 10vh;
+        color: #444;
+        text-align: center;
+        font-size: 0.3rem;
+        font-weight: 600;
+        font-family: Verdana;
+    }
+}

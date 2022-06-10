@@ -1,0 +1,652 @@
+/* --------------------------  'mobile버전' 시작 ------------------------------ */
+/* 360 x 640px를 디폴트로 */
+/* 가로 : 50px = 13.8 %*/
+/* 높이 : 50px = 7.8 %  */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/* --------------------------  container 시작 -------------------------- */
+@media screen and (min-width:0px) and (max-width:767px) {
+    /* --------------------------  '공통부분' 시작 ---------------------------- */
+    #container_Mobile #question_Mobile_01{
+        /* width: 1000px; */
+        width: 100%;
+        /* height: 400px; */
+        height: 50vw;
+
+        background-color: #eee;
+    }
+    #container_Mobile #notify{
+        position: relative;
+        /* top:150px; */
+        top:15vw;
+        /* width: 1000px; */
+        width: 100%;
+        /* height: 100px; */
+        height: 10vw;
+
+        font-size: 30px;
+        text-align: center;
+        font-weight: 800;
+        color: #555;
+    }
+    #container_Mobile #notify_kakaoChannel{
+        /* width:400px; */
+        width: 80%;
+        height: 30px;
+        position: relative;
+        /* left:300px; */
+        left: 10%;
+        /* top:150px; */
+        top:18vw;
+        background-color: yellow;
+
+        padding-top: 5px;
+        font-size: 16px;
+        color: #555;
+        text-align: center;
+        font-weight: 800;
+    }
+    #container_Mobile #question_Mobile_02{
+        background-color: rgba(255,255,0,0.8);
+        position: relative;
+        margin: 0 auto;
+    }
+    #container_Mobile #community_Mobile_01_container{
+        /* width: 1000px;  넓이 1600px 고정 */
+        /* height: 301px; 높이 600px 고정 */
+        width: 100%;
+        height: 60vh;
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+    }
+    #container_Mobile #community_Mobile_01_logo_line{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    #container_Mobile #community_Mobile_01_logo_line_middle{
+        position:relative;
+        /* top:-51px; */
+        top:14vh;
+        margin:0 auto;
+        z-index: 2;
+    }
+    #container_Mobile #kakao_Mobile_01_logo_top{
+        /* height: 150px; */
+        height: 10vh;
+        text-align: center;
+        color: #555;
+        font-size: 40px;
+        letter-spacing: 10px;
+        position: relative;       
+        /* top:30px; */
+        top:10vh;
+    }
+    #container_Mobile #kakao_Mobile_01_logo_bottom{
+        position:relative;
+        /* top:-20px; */
+        top:20vh;
+        text-align: center;
+        color: #555;
+        font-size: 25px;
+        letter-spacing: 15px;
+        font-weight:800;
+    }
+    #container_Mobile #kakao_Mobile_01_left{
+        height: 1px;
+        /* width: 500px; */
+        width: 45%;
+        position: absolute;
+        /* top:150px; */
+        top:30vh;
+        left:0px;
+
+        background: -webkit-linear-gradient(left,rgba(0,0,0,1),rgba(255,255,0,1));
+    }
+    #container_Mobile #kakao_Mobile_01_right{
+        height: 1px;
+        /* width: 500px;    */
+        width: 45%;
+        position: absolute;
+        /* top:150px; */
+        top:30vh;
+        right:0px;
+
+        background: -webkit-linear-gradient(right,rgba(0,0,0,1),rgba(255,255,0,1));
+    }
+    
+    /* --------------------------  '시험 장소' 시작 ---------------------------- */
+    #container_Mobile #testsite_Mobile_01{
+        /* width: 1000px; */
+        width: 100%;
+        /* height: 1000px; */
+
+        background-image: linear-gradient(rgba(243,233,252,0.8),rgba(243,233,252,0.4)) ;
+    }
+    #container_Mobile #testsite_Mobile_01 > h2{
+        color: darkmagenta;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 10px;
+    }
+    #container_Mobile #testsite_Mobile_01 > h3{
+        width: 80%;
+        position: relative;
+        left:10%;
+        color:#aaa;
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    #container_Mobile .testsite_row{
+        width: 100%;
+        height: 110vw;
+        display: flex;
+        flex-direction: row;
+        /* gap:10px; */
+        justify-content: space-around;
+        padding-bottom: 30px;
+
+    }
+    #container_Mobile .testsite_box{
+        background-color: #fff;
+        /* width: 300px; */
+        width: 40%;
+        /* height: 650px; */
+        height: 105vw;
+    }
+    #container_Mobile .testsite_img{
+        /* width: 280px; */
+        /* height: 400px; */
+        width: 80%;
+        height: 40vw;
+        position: relative;
+        /* left: 10px; */
+        left:10%;
+        top:10px;
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    #container_Mobile .testsite_name{
+        /* width: 280px; */
+        width: 80%;
+        height: 20vw;
+        position: relative;
+        /* left: 10px; */
+        left:10%;
+
+        color: darkmagenta;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-weight: 800;
+    }
+    #container_Mobile .testsite_address{
+        /* width: 280px; */
+        /* height: 70px; */
+        width: 80%;
+        height: 20vw;
+        position: relative;
+        /* left: 10px; */
+        left:10%;
+        color: #aaa;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 800;
+    }
+    #container_Mobile .testsite_more{
+        /* width: 140px; */
+        width: 70%;
+        height: 6vw;
+        position: relative;
+        top:10px;
+        /* left: 80px; */
+        left:15%;
+        background-color: darkmagenta;
+
+        color: #fff;
+        /* padding-top:15px; */
+        line-height: 6vw;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 800;
+    }
+     /* --------------------------  '진로소개' 시작 ---------------------------- */
+     #container_Mobile #career_Mobile_01{
+        /* width: 1000px; */
+        width: 100%;
+        /* height: 700px; */
+        height: 160vw;
+
+        background-color: #000;
+    }
+    #container_Mobile #career_top{
+        /* width: 1000px; */
+        width: 100%;
+        height: 40vw;
+        /* height: 400px; */
+
+        background-size: 100% 100%;
+    }
+    #container_Mobile .career_img_row{
+        position: relative;
+        /* top:-80px; */
+        top:-5vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:30px;
+
+        margin-bottom: 30px;
+    }
+    #container_Mobile .carrer_img_box{
+        /* width: 150px; */
+        width: 35vw;
+        /* height: 150px; */
+        height: 35vw;
+
+        background-color: #fff;
+        border: 1px solid #aaa;
+        border-radius: 10px;
+        box-shadow: 5px 5px 3px rgba(170, 170, 170, 0.5);
+    }
+    #container_Mobile .carrer_icon{
+        /* width: 50px; */
+        width: 50%;
+        height: 50%;
+        /* height: 50px; */
+        position: relative;
+        top:10px;
+        /* left:50px; */
+        left:25%;
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    #container_Mobile .career_theme{
+        /* width: 100px; */
+        width: 80%;
+        /* height: 30px; */
+        height: 17vw;
+        position: relative;
+        /* top:40px; */
+        top:7vw;
+        /* left:25px; */
+        left:10%;
+
+        color: #333;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #container_Mobile #career_advice{
+        /* width: 1000px; */
+        width: 80%;
+        height: 50px;
+        position: relative;
+        left: 10%;
+
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+    /* --------------------------  '카카오채널' 시작 ---------------------------- */
+    #container_Mobile #kakaochannel_Mobile_01{
+        background-color: rgba(255,255,0,0.8);
+        position: relative;
+        margin: 0 auto;
+    }
+}
+/* --------------------------  'PC버전' 시작 ------------------------------ */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/* --------------------------  'PC버전' 시작--------------------------- */
+@media screen and (min-width:768px){    
+    /* --------------------------  'Q & A' 시작 ---------------------------- */
+    #container_PC #question_PC_01{
+        width: 1000px;
+        height: 400px;
+
+        background-color: #eee;
+    }
+
+    #container_PC #notify{
+        position: relative;
+        top:150px;
+        width: 1000px;
+        height: 100px;
+
+        font-size: 50px;
+        text-align: center;
+        font-weight: 800;
+        color: #555;
+    }
+    #container_PC #notify_kakaoChannel{
+        width:400px;
+        height: 30px;
+        position: relative;
+        left:300px;
+        top:150px;
+        background-color: yellow;
+
+        padding-top: 5px;
+        font-size: 20px;
+        color: #555;
+        text-align: center;
+        font-weight: 800;
+    }
+    #container_PC #question_PC_02{
+        background-color: rgba(255,255,0,0.8);
+        position: relative;
+        margin: 0 auto;
+    }
+    /* 나머지는 kakaochaneel에 있음 */
+    /* --------------------------  '시험 장소' 시작 ---------------------------- */
+    #container_PC #testsite_PC_01{
+        width: 1000px;
+        height: 1000px;
+
+        background-image: linear-gradient(rgba(243,233,252,0.8),rgba(243,233,252,0.4)) ;
+    }
+    #container_PC #testsite_PC_01 > h2{
+        color: darkmagenta;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    #container_PC #testsite_PC_01 > h3{
+        color:#aaa;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    #container_PC #testsite_row{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        justify-content: space-around;
+
+    }
+    #container_PC #testsite_01, 
+    #container_PC #testsite_03{
+        background-color: #fff;
+    }
+
+    #container_PC #testsite_02{
+        background-image: linear-gradient(rgba(255,255,255,1.0),rgba(243,233,252,0.8)) ;
+    }
+    #container_PC .testsite_box{
+        width: 300px;
+        height: 650px;
+    }
+    #container_PC .testsite_img{
+        width: 280px;
+        height: 400px;
+        position: relative;
+        left: 10px;
+        top:10px;
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    #container_PC .testsite_name{
+        width: 280px;
+        position: relative;
+        left: 10px;
+
+        color: darkmagenta;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-weight: 800;
+    }
+    #container_PC .testsite_address{
+        width: 280px;
+        height: 70px;
+        position: relative;
+        left: 10px;
+        color: #aaa;
+        font-size: 15px;
+        text-align: center;
+        font-weight: 800;
+    }
+    #container_PC .testsite_more{
+        width: 140px;
+        height: 40px;
+        position: relative;
+        top:20px;
+        left: 80px;
+        background-color: darkmagenta;
+
+        color: #fff;
+        padding-top:15px;
+        font-size: 15px;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    /* --------------------------  '진로소개' 시작 ---------------------------- */
+    #container_PC #career_PC_01{
+        width: 1000px;
+        height: 700px;
+
+        background-color: #000;
+    }
+    #container_PC #career_top{
+        width: 1000px;
+        height: 400px;
+
+        background-size: 100% 100%;
+    }
+    #container_PC #career_img_row{
+        position: relative;
+        top:-80px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:30px;
+    }
+    #container_PC .carrer_img_box{
+        width: 150px;
+        height: 150px;
+
+        background-color: #fff;
+        border: 1px solid #aaa;
+        border-radius: 10px;
+        box-shadow: 5px 5px 3px rgba(170, 170, 170, 0.5);
+    }
+    #container_PC .carrer_icon{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top:20px;
+        left:50px;
+        background: no-repeat;
+        background-size:100% 100%;
+    }
+    #container_PC .career_theme{
+        width: 100px;
+        height: 30px;
+        position: relative;
+        top:40px;
+        left:25px;
+
+        color: #333;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #container_PC #career_advice{
+        width: 1000px;
+        height: 50px;
+
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+
+
+    /* --------------------------  '카카오채널' 시작 ---------------------------- */
+    #container_PC #kakaochannel_PC_01{
+        background-color: rgba(255,255,0,0.8);
+        position: relative;
+        margin: 0 auto;
+    }
+    #container_PC #community_PC_01_container{
+        width: 1000px;  /* 넓이 1600px 고정*/
+        height: 301px; /* 높이 600px 고정*/
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+    }
+
+    #container_PC #community_PC_01_logo_line{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    #container_PC #community_PC_01_logo_line_middle{
+        position:relative;
+        top:-51px;
+        margin:0 auto;
+        z-index: 2;
+    }
+    #container_PC #kakao_PC_01_logo_top{
+        height: 150px;
+        text-align: center;
+        color: #555;
+        font-size: 50px;
+        letter-spacing: 10px;
+        position: relative;
+        top:30px;
+    }
+    #container_PC #kakao_PC_01_logo_bottom{
+        position:relative;
+        top:-20px;
+        text-align: center;
+        color: #555;
+        font-size: 25px;
+        letter-spacing: 15px;
+        font-weight:800;
+    }
+    #container_PC #kakao_PC_01_left{
+        height: 1px;
+        width: 500px;   
+        position: absolute;
+        top:150px;
+        left:0px;
+
+        background: -webkit-linear-gradient(left,rgba(0,0,0,1),rgba(255,255,0,1));
+    }
+    #container_PC #kakao_PC_01_right{
+        height: 1px;
+        width: 500px;   
+        position: absolute;
+        top:150px;
+        right:0px;
+
+        background: -webkit-linear-gradient(right,rgba(0,0,0,1),rgba(255,255,0,1));
+    }
+
+
+
+
+    #container_PC #kakaochannel_PC_02{
+        width: 1000px;
+        height: 2000px;
+    }
+    #container_PC .contents_layout{
+        width: 1000px;
+        height: 1000px;
+    }
+    #container_PC .contents_layout_top{
+        width: 1000px;
+        height: 100px;
+    }
+    #container_PC .contents_layout_row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #container_PC .contents_layout_box{
+        width: 300px;
+        height: 600px;
+        box-shadow: 5px 5px 3px rgba(85, 85, 85, 0.5);
+    }
+    #container_PC .contents_number{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+        top:-50px;
+        left: 100px;
+        background-color: rgba(255,255,0);
+        border: 1px solid #555;
+        z-index: 2;
+        color:#333;
+        font-size: 50px;
+        text-align: center;
+        line-height: 100px;
+        font-weight: 800;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #container_PC .contents_img{
+        width: 300px;
+        height: 500px;
+        position: relative;
+        top:-100px;
+        background: no-repeat;
+        background-size: 300px 500px;
+        z-index: 1;
+    }
+    #container_PC .contents_explanation{
+        width: 298px;
+        height: 98px;
+        position: relative;
+        top:-100px;
+
+        border: 1px solid #555;
+        
+        
+    }
+    #container_PC .contents_explanation > h3{
+        color: #555;
+        font-weight: 800;
+        font-size: 20px;
+        margin-top:5px;
+        margin-left: 20px;
+
+    }
+}
+
+

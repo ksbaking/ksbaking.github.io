@@ -1,0 +1,49 @@
+/* 모바일버전 */
+@media screen and (min-width:0px) and (max-width:767px) {
+    /* mobile, pc버전 헤더 view 변경 */
+    /* header 부분 */
+    #header_Mobile{display: _none;} /* Mobile 버전 메뉴바 */
+    #header_PC{display: none; } /* PC 버전 메뉴바 없애기 */
+
+    /* 컨텐츠 부분 */
+    #container_Mobile{display:_none;}
+    #container_PC{display:none;}
+
+    /* footer 부분 */
+    #footer_mobile{display: _none;}
+    #footer_PC{display:none;}   
+}
+/* 모바일,테블릿 */
+/* @media screen and (min-width:480px) and (max-width:767px) {
+
+} */
+/* PC 버전 */
+@media screen and (min-width:768px) {
+    /* mobile, pc버전 헤더 view 변경 */
+    /* header 부분 */
+    #header_Mobile{display: none;} /* Mobile 버전 메뉴바 없애기 */
+    #header_PC{display: _none;width:100%;margin:auto;} /* PC 버전 메뉴바 */
+
+    /* 컨텐츠 부분 */
+    #container_Mobile{display: none;}
+    #container_PC{display:_none;}
+
+    /* footer 부분 */
+    #footer_mobile{display: none;}
+    #footer_PC{display:_none;}
+}
+
+/* --------------------------  사전 세팅 시작 -------------------------- */
+/* 모바일버전 */
+@media screen and (min-width:0px) and (max-width:767px) {
+    
+}
+/* 모바일,테블릿 */
+/* @media screen and (min-width:480px) and (max-width:767px) {
+
+} */
+/* PC 버전 */
+@media screen and (min-width:768px) { 
+    
+}
+/* --------------------------  사전 세팅 종료 -------------------------- */

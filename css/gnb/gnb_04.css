@@ -1,0 +1,504 @@
+/* --------------------------  'mobile버전' 시작 ------------------------------ */
+/* 360 x 640px를 디폴트로 */
+/* 가로 : 50px = 13.8 %*/
+/* 높이 : 50px = 7.8 %  */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/* --------------------------  container 시작 -------------------------- */
+@media screen and (min-width:0px) and (max-width:767px) {
+    /* --------------------------  '공통부분' 시작 ---------------------------- */
+    
+    
+    
+    
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '원데이클래스' 시작 ---------------------------- */
+    /* 원데이클래스 탑 이미지 */
+     #container_Mobile #common_oneday_Mobile_01{
+        width: 100%;
+        height: 50vw;
+        background: no-repeat rgba(0,0,0,0.5);
+        background-size: 100% 100%;
+        background-blend-mode: multiply;
+    }
+    #container_Mobile #common_oneday_Mobile_01 > h1{
+        font-size: 28px;
+        color: #fff;
+        text-align: center;
+        padding-top: 20px;
+        line-height: 40px;
+    }
+
+
+
+    
+    /* 원데이클래스 간략 설명 */
+    #container_Mobile #common_oneday_Mobile_02{
+        /* height: 850px; */
+        padding-bottom: 40vw;
+        background-color: lavenderblush;
+    }
+    #container_Mobile #OndayContents_top{
+        height: 40vw;
+
+        display: flex;
+        flex-direction: row;
+    }
+    #container_Mobile #OndayContents_layout{
+        /* width: 450px;
+        height: 250px; */
+        width: 45%;
+        height: 160px;
+        border:5px solid #ffdaec;
+        background-color: #fff;
+
+        position: relative;
+        top:-10vw;
+        /* left:50px; */
+        left:5%;
+        z-index: 2;
+    }
+    #container_Mobile #OndayContents_Box{
+        width: 90%;
+        height: 160px;
+        position: relative;
+        left: 5%;
+    }
+    #container_Mobile #OndayContents_Box > h2{
+        margin-top: 10px;
+        font-size: 20px;
+        color: #555;
+    }
+    #container_Mobile #OndayContents_Box_line{
+        margin-top: 5px;
+        width: 60px;
+        height: 5px;
+        background-color: #ffdaec;
+        border-radius: 10px;
+    }
+    #container_Mobile #OndayContents_text_item{
+        margin-top: 5px;
+        height: 70px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #555;
+    }
+    
+    #container_Mobile #OndayContents_Box > a{
+        display: block;
+        width: 90%;
+        height: 26px;
+        /* position: relative; */
+        /* top:30px; */
+
+    }
+    #container_Mobile #OndayCalendar_link{
+        /* margin-top: 10px; */
+        width: 100%;
+        height: 26px;
+        /* position: relative;
+        top:; */
+        background-color: #ffdaec;
+
+        /* padding-top: 3px; */
+        color: #555;
+        font-size: 14px;
+        font-weight: 800;
+        text-align: center;
+        line-height: 26px;
+    }
+    #container_Mobile #OndayContents_img{
+        /* width: 600px; */
+        width: 65%;
+        height: 250px;
+        background:  no-repeat;
+        background-size: 100% 100%;
+
+        position: relative;
+        top:-20vw;
+        right: 5%;
+        z-index: 1;
+    }
+    #container_Mobile #kakaoChannel{
+        width:70%;
+        height: 30px;
+        position: relative;
+        top:12vw;
+        left:15%;
+        background-color: yellow;
+
+        /* padding-top: 5px; */
+        font-size: 12px;
+        color: #555;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 800;
+    }
+    /* 원데이클래스 보충 설명 */
+    #container_Mobile #OndayContents_bottom{
+        /* height: 600px; */
+        /* padding-bottom: 20px; */
+        position: relative;
+        top:12vw;
+    }
+    #container_Mobile #OndayContents_bottom > h2{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 0px;
+        font-weight: 600;
+    }
+    #container_Mobile #OndayContents_bottom > h3{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    #container_Mobile #OndayContents_explanation_column{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #container_Mobile .OndayContents_explanation_box{
+        /* width: 300px;
+        height: 400px; */
+        width: 30%;
+        height: 40vw;
+    }
+    /* #container_PC .OndayContents_explanation_box > img{
+        position: relative;
+        left:50px;
+        margin-top:30px;
+        width: 200px;
+        height: 200px;
+    } */
+    #container_Mobile .OndayContents_explanation_img{
+        width: 100%;
+        height: 30vw;
+
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    #container_Mobile .OndayContents_explanation_Theme{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 800;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #container_Mobile .OndayContents_explanation_Theme_line{
+        margin-top: 5px;
+        position: relative;
+        left: 10%;
+        width: 80%;
+        height: 5px;
+        background-color: #222;
+        border-radius: 10px;
+    }
+    #container_Mobile .OndayContents_explanation_Contents{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 12px;
+        font-weight: 700;
+        /* position: relative;
+        left: 50px; */
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    /* 원데이 poroduct 소개 */
+    #container_Mobile #common_oneday_Mobile_03{
+        width: 100%;
+        padding-bottom: 100px;
+        /* height: 850px; */
+        background-color: #eee;
+        /* margin-bottom: 20px; */
+    }
+    /* #container_PC #Onedayproduct > img{
+        margin-left: 100px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    } */
+    #container_Mobile #Onedayproduct{
+        width: 60%;
+        height: 15vw;
+        position: relative;
+        left:20%;
+        top:20px;
+
+        background: no-repeat;
+        background-size: 100% 100%;
+
+    }
+    #container_Mobile #Oneday_picture{
+        position: relative;
+        top:40px;
+
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+    #container_Mobile .Oneday_picture_row{
+        width: 90%;
+        position: relative;
+        left:5%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* gap:5vw; */
+    }
+    #container_Mobile .Oneday_picture_column{
+        width: 40vw;
+        height: 40vw;
+        border: 5px solid #fff;
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+
+
+
+
+
+
+
+}
+/* --------------------------  'PC버전' 시작 ------------------------------ */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/* --------------------------  'PC버전' 시작--------------------------- */
+@media screen and (min-width:768px){
+    /* --------------------------  '원데이클래스' 공통 시작 ---------------------------- */
+    /* 원데이클래스 탑 이미지 */
+    #container_PC #common_oneday_PC_01{
+        width: 1000px;
+        height: 500px;
+        background: no-repeat rgba(0,0,0,0.5);
+        background-size: 100% 100%;
+        background-blend-mode: multiply;
+    }
+    #container_PC #common_oneday_PC_01 > h1{
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+        padding-top: 40px;
+        line-height: 60px;
+    }
+    /* 원데이클래스 간략 설명 */
+    #container_PC #common_oneday_PC_02{
+        height: 850px;
+        background-color: lavenderblush;
+    }
+    #container_PC #OndayContents_top{
+        height: 230px;
+
+        display: flex;
+        flex-direction: row;
+    }
+    #container_PC #OndayContents_layout{
+        width: 450px;
+        height: 250px;
+        border:5px solid #ffdaec;
+        background-color: #fff;
+
+        position: relative;
+        top:-100px;
+        left:50px;
+        z-index: 2;
+    }
+    #container_PC #OndayContents_Box{
+        width: 380px;
+        position: relative;
+        left: 20px;
+    }
+    #container_PC #OndayContents_Box > h2{
+        margin-top: 15px;
+        font-size: 30px;
+        color: #555;
+    }
+    #container_PC #OndayContents_Box_line{
+        margin-top: 10px;
+        width: 60px;
+        height: 5px;
+        background-color: #ffdaec;
+        border-radius: 10px;
+    }
+    #container_PC #OndayContents_text_item{
+        margin-top: 10px;
+        height: 80px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #555;
+    }
+    #container_PC #OndayCalendar_link{
+        margin-top: 30px;
+        width: 250px;
+        height: 30px;
+        background-color: #ffdaec;
+
+        padding-top: 5px;
+        color: #555;
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
+    }
+    #container_PC #OndayContents_img{
+        width: 600px;
+        height: 500px;
+        background:  no-repeat;
+        background-size: 600px 400px;
+
+        position: relative;
+        top:-200px;
+        right: 50px;
+        z-index: 1;
+    }
+    #container_PC #kakaoChannel{
+        width:400px;
+        height: 30px;
+        position: relative;
+        left:300px;
+        background-color: yellow;
+
+        padding-top: 5px;
+        font-size: 20px;
+        color: #555;
+        text-align: center;
+        font-weight: 800;
+    }
+    /* 원데이클래스 보충 설명 */
+    #container_PC #OndayContents_bottom{
+        height: 600px;
+    }
+    #container_PC #OndayContents_bottom > h2{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+    #container_PC #OndayContents_bottom > h3{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    #container_PC #OndayContents_explanation_column{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #container_PC .OndayContents_explanation_box{
+        width: 300px;
+        height: 400px;
+    }
+    /* #container_PC .OndayContents_explanation_box > img{
+        position: relative;
+        left:50px;
+        margin-top:30px;
+        width: 200px;
+        height: 200px;
+    } */
+    
+    #container_PC .OndayContents_explanation_img{
+        position: relative;
+        left:50px;
+        margin-top:30px;
+        width: 200px;
+        height: 200px;
+
+        background: no-repeat;
+        background-size: 100% 100%;
+    }
+    #container_PC .OndayContents_explanation_Theme{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #container_PC .OndayContents_explanation_Theme_line{
+        margin-top: 10px;
+        position: relative;
+        left: 60px;
+        width: 180px;
+        height: 5px;
+        background-color: #222;
+        border-radius: 10px;
+    }
+    #container_PC .OndayContents_explanation_Contents{
+        margin-top: 20px;
+        width: 200px;
+        font-size: 15px;
+        font-weight: 700;
+        position: relative;
+        left: 50px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    /* 원데이 poroduct 소개 */
+    #container_PC #common_oneday_PC_03{
+        width: 1000px;
+        height: 850px;
+        background-color: #eee;
+        margin-bottom: 20px;
+    }
+    /* #container_PC #Onedayproduct > img{
+        margin-left: 100px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    } */
+    #container_PC #Onedayproduct{
+        margin-left: 100px;
+        /* margin-top: 40px; */
+        margin-bottom: 70px;
+        width: 400px;
+        height: 100px;
+        position: relative;
+        top:40px;
+
+        background: no-repeat;
+        background-size: 100% 100%;
+
+    }
+    #container_PC #Oneday_picture{
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+    }
+    #container_PC .Oneday_picture_row{
+        position: relative;
+        left:40px;
+
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }
+    #container_PC .Oneday_picture_column{
+        width: 290px;
+        height: 290px;
+        border: 5px solid #fff;
+        background-size: 280px 280px;
+    }
+}

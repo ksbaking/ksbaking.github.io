@@ -1,0 +1,615 @@
+/* --------------------------  'mobile버전' 시작 ------------------------------ */
+/* 360 x 640px를 디폴트로 */
+/* 가로 : 50px = 13.8 %*/
+/* 높이 : 50px = 7.8 %  */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/*                                                                    */
+/* --------------------------  container 시작 -------------------------- */
+@media screen and (min-width:0px) and (max-width:767px) {
+    /* --------------------------  '공통부분' 시작 ---------------------------- */
+    
+    
+    
+    
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '인스타' 시작 ---------------------------- */
+    /* 인스타그램 탑 이미지 */
+    #container_Mobile #instagram_Mobile_01{   
+        background-color: rgba(138,43,226,0.8);
+        position: relative;
+        margin: 0 auto;
+    }
+    #container_Mobile #community_Mobile_01_container{
+        /* width: 1000px;  넓이 1600px 고정 */
+        /* height: 301px; 높이 600px 고정 */
+        width: 100%;
+        height: 60vh;
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+    }
+    #container_Mobile #instagram_Mobile_01_logo_top{
+        /* height: 150px; */
+        height: 10vh;
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+        letter-spacing: 10px;
+        position: relative;        
+        /* top:30px; */
+        top:10vh;
+    }
+    #container_Mobile #community_Mobile_01_logo_line{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    #container_Mobile #instagram_Mobile_01_left{
+        height: 1px;
+        /* width: 500px;    */
+        width: 45%;
+        position: absolute;
+        /* top:150px; */
+        top:30vh;
+        left:0px;
+
+        background: -webkit-linear-gradient(left,rgba(255,255,255,1),rgba(255,255,255,0));
+        z-index: 1;
+    }
+    #container_Mobile #instagram_Mobile_01_right{
+        height: 1px;
+        /* width: 500px;    */
+        width: 45%;
+        position: absolute;
+        /* top:150px; */
+        top:30vh;
+        right:0px;
+
+        background: -webkit-linear-gradient(right,rgba(255,255,255,1),rgba(255,255,255,0));
+        z-index: 1;
+    }
+    #container_Mobile #community_Mobile_01_logo_line_middle{
+        position:relative;
+        /* top:-51px; */
+        top:14vh;
+        margin:0 auto;
+        z-index: 2;
+    }
+    #container_Mobile #instagram_Mobile_01_logo_bottom{
+        position:relative;
+        /* top:-20px; */
+        top:20vh;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 15px;
+        font-weight:800;
+    }
+    /* --------------------------  '인스타' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '카카오' 시작 ---------------------------- */
+    #container_Mobile #kakao_Mobile_01{
+        background-color: rgba(255,255,0,0.8);
+        position: relative;
+        margin: 0 auto;
+    }
+    #container_Mobile #kakao_Mobile_01_logo_top{
+        /* height: 150px; */
+        height: 10vh;
+        text-align: center;
+        color: #555;
+        font-size: 40px;
+        letter-spacing: 10px;
+        position: relative;       
+        /* top:30px; */
+        top:10vh;
+    }
+    #container_Mobile #kakao_Mobile_01_logo_bottom{
+        position:relative;
+        /* top:-20px; */
+        top:20vh;
+        text-align: center;
+        color: #555;
+        font-size: 25px;
+        letter-spacing: 15px;
+        font-weight:800;
+    }
+    #container_Mobile #kakao_Mobile_01_left{
+        height: 1px;
+        /* width: 500px; */
+        width: 45%;
+        position: absolute;
+        /* top:150px; */
+        top:30vh;
+        left:0px;
+
+        background: -webkit-linear-gradient(left,rgba(0,0,0,1),rgba(255,255,0,1));
+    }
+    #container_Mobile #kakao_Mobile_01_right{
+        height: 1px;
+        /* width: 500px;    */
+        width: 45%;
+        position: absolute;
+        /* top:150px; */
+        top:30vh;
+        right:0px;
+
+        background: -webkit-linear-gradient(right,rgba(0,0,0,1),rgba(255,255,0,1));
+    }
+    /* --------------------------  '카카오' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '블로그' 시작 ---------------------------- */
+    #container_Mobile #blog_Mobile_01{
+        background-color: green;
+        position: relative;
+        margin: 0 auto;
+    }
+    #container_Mobile #blog_Mobile_01_logo_top{
+        /* height: 150px; */
+        height: 10vh;
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+        letter-spacing: 10px;
+        position: relative;       
+        /* top:30px; */
+        top:10vh;
+    }
+    #container_Mobile #blog_Mobile_01_logo_bottom{
+        position:relative;
+        /* top:-20px; */
+        top:20vh;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 15px;
+        font-weight:800;
+    }
+    #container_Mobile #blog_Mobile_01_left{
+        height: 1px;
+        /* width: 500px;    */
+        width: 45%;
+        position: absolute;
+        /* top:150px; */
+        top:30vh;
+        left:0px;
+
+        background: -webkit-linear-gradient(left,rgba(255,255,255,1),green);
+    }
+    #container_Mobile #blog_Mobile_01_right{
+        height: 1px;
+        /* width: 500px;    */
+        width: 45%;
+        position: absolute;
+        /* top:150px; */
+        top:30vh;
+        right:0px;
+
+        background: -webkit-linear-gradient(right,rgba(255,255,255,1),green);
+    }
+    /* --------------------------  '블로그' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '공지사항' 시작 ---------------------------- */
+    #container_Mobile #notification_Mobile_01{
+        /* width: 1000px; */
+        width: 100%;
+        /* height: 400px; */
+        height: 50vw;
+
+        background-color: #eee;
+    }
+
+    #container_Mobile #notify{
+        position: relative;
+        /* top:150px; */
+        top:15vw;
+        /* width: 1000px; */
+        width: 100%;
+        /* height: 100px; */
+        height: 10vw;
+
+        font-size: 30px;
+        text-align: center;
+        font-weight: 800;
+        color: #555;
+    }
+    #container_Mobile #notify_kakaoChannel{
+        /* width:400px; */
+        width: 80%;
+        height: 30px;
+        position: relative;
+        /* left:300px; */
+        left: 10%;
+        /* top:150px; */
+        top:18vw;
+        background-color: yellow;
+
+        padding-top: 5px;
+        font-size: 16px;
+        color: #555;
+        text-align: center;
+        font-weight: 800;
+    }
+  
+
+
+
+}
+/* --------------------------  'PC버전' 시작 ------------------------------ */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/*                                                                     */
+/* --------------------------  'PC버전' 시작--------------------------- */
+@media screen and (min-width:768px){
+    /* --------------------------  '인스타' 시작 ---------------------------- */
+    /* 인스타그램 탑 이미지 */
+    #container_PC #instagram_PC_01{   
+        background-color: rgba(138,43,226,0.8);
+        position: relative;
+        margin: 0 auto;
+    }
+    #container_PC #community_PC_01_container{
+        width: 1000px;  /* 넓이 1600px 고정*/
+        height: 301px; /* 높이 600px 고정*/
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+    }
+    #container_PC #instagram_PC_01_logo_top{
+        height: 150px;
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+        letter-spacing: 10px;
+        position: relative;
+        top:30px;
+    }
+    #container_PC #community_PC_01_logo_line{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    #container_PC #instagram_PC_01_left{
+        height: 1px;
+        width: 500px;   
+        position: absolute;
+        top:150px;
+        left:0px;
+
+        background: -webkit-linear-gradient(left,rgba(255,255,255,1),rgba(255,255,255,0));
+        z-index: 1;
+    }
+    #container_PC #instagram_PC_01_right{
+        height: 1px;
+        width: 500px;   
+        position: absolute;
+        top:150px;
+        right:0px;
+
+        background: -webkit-linear-gradient(right,rgba(255,255,255,1),rgba(255,255,255,0));
+        z-index: 1;
+    }
+    #container_PC #community_PC_01_logo_line_middle{
+        position:relative;
+        top:-51px;
+        margin:0 auto;
+        z-index: 2;
+    }
+    #container_PC #instagram_PC_01_logo_bottom{
+        position:relative;
+        top:-20px;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 15px;
+        font-weight:800;
+    }
+    /* 인스타그램 설명 */
+    #container_PC #instagram_PC_02, 
+    #container_PC #kakao_PC_02, 
+    #container_PC #blog_PC_02{
+        background-color:rgba(250,235,215,0.5);
+        height: 1100px;
+    }
+    #container_PC #community_recommend{
+        padding-top: 50px;
+        height: 150px;
+    }
+    #container_PC #community_recommend > h2{
+        font-size: 25px;
+        text-align: center;
+        color:goldenrod;
+        font-weight: 700;
+        margin-top:2px;
+        margin-bottom:2px;
+    }
+    #container_PC #community_recommend > h3{
+        font-size: 25px;
+        text-align: center;
+        color:#555;
+        font-weight: 700;
+        margin-top:2px;
+        margin-bottom:2px;
+    }
+    #container_PC #community_Contents_column{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #container_PC .community_Contents_box{
+        width: 300px;
+        height: 800px;
+    }
+    #container_PC .community_Contents_box > img{
+        margin-top: 20px;
+        width: 300px;
+        height: 600px;
+    }
+    #container_PC .instagram_Contents_Theme{
+        position: relative;
+        margin:0 auto;
+        margin-top: 40px;
+        width: 200px;
+        height: 40px;
+        background-color: rgba(138,43,226,0.8);
+
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        padding-top:10px;
+    }
+    #container_PC .community_Contents_text{
+        font-size: 15px;
+        color:#555;
+        font-weight: 700;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* --------------------------  '인스타' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '카카오' 시작 ---------------------------- */
+    #container_PC #kakao_PC_01{
+        background-color: rgba(255,255,0,0.8);
+        position: relative;
+        margin: 0 auto;
+    }
+    #container_PC #kakao_PC_01_logo_top{
+        height: 150px;
+        text-align: center;
+        color: #555;
+        font-size: 50px;
+        letter-spacing: 10px;
+        position: relative;
+        top:30px;
+    }
+    #container_PC #kakao_PC_01_logo_bottom{
+        position:relative;
+        top:-20px;
+        text-align: center;
+        color: #555;
+        font-size: 25px;
+        letter-spacing: 15px;
+        font-weight:800;
+    }
+    #container_PC #kakao_PC_01_left{
+        height: 1px;
+        width: 500px;   
+        position: absolute;
+        top:150px;
+        left:0px;
+
+        background: -webkit-linear-gradient(left,rgba(0,0,0,1),rgba(255,255,0,1));
+    }
+    #container_PC #kakao_PC_01_right{
+        height: 1px;
+        width: 500px;   
+        position: absolute;
+        top:150px;
+        right:0px;
+
+        background: -webkit-linear-gradient(right,rgba(0,0,0,1),rgba(255,255,0,1));
+    }
+    #container_PC .kakao_Contents_Theme{
+        position: relative;
+        margin:0 auto;
+        margin-top: 40px;
+        width: 200px;
+        height: 40px;
+        background-color: rgba(255,255,0,0.6);
+
+        font-size: 20px;
+        color: #222;
+        font-weight: 700;
+        text-align: center;
+        padding-top:10px;
+    }
+    /* --------------------------  '카카오' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '블로그' 시작 ---------------------------- */
+    #container_PC #blog_PC_01{
+        background-color: green;
+        position: relative;
+        margin: 0 auto;
+    }
+    #container_PC #blog_PC_01_logo_top{
+        height: 150px;
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+        letter-spacing: 10px;
+        position: relative;
+        top:30px;
+    }
+    #container_PC #blog_PC_01_logo_bottom{
+        position:relative;
+        top:-20px;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 15px;
+        font-weight:800;
+    }
+    #container_PC #blog_PC_01_left{
+        height: 1px;
+        width: 500px;   
+        position: absolute;
+        top:150px;
+        left:0px;
+
+        background: -webkit-linear-gradient(left,rgba(255,255,255,1),green);
+    }
+    #container_PC #blog_PC_01_right{
+        height: 1px;
+        width: 500px;   
+        position: absolute;
+        top:150px;
+        right:0px;
+
+        background: -webkit-linear-gradient(right,rgba(255,255,255,1),green);
+    }
+    #container_PC .blog_Contents_Theme{
+        position: relative;
+        margin:0 auto;
+        margin-top: 40px;
+        width: 200px;
+        height: 40px;
+        background-color: green;
+
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        padding-top:10px;
+    }
+    /* --------------------------  '블로그' 종료 ---------------------------- */
+    /*                                                                     */
+    /*                                                                     */
+    /* --------------------------  '공지사항' 시작 ---------------------------- */
+    #container_PC #notification_PC_01{
+        width: 1000px;
+        height: 400px;
+
+        background-color: #eee;
+    }
+
+    #container_PC #notify{
+        position: relative;
+        top:150px;
+        width: 1000px;
+        height: 100px;
+
+        font-size: 50px;
+        text-align: center;
+        font-weight: 800;
+        color: #555;
+    }
+    #container_PC #notify_kakaoChannel{
+        width:400px;
+        height: 30px;
+        position: relative;
+        left:300px;
+        top:150px;
+        background-color: yellow;
+
+        padding-top: 5px;
+        font-size: 20px;
+        color: #555;
+        text-align: center;
+        font-weight: 800;
+    }
+
+
+    #container_PC #notification_PC_02{
+        background-color: rgba(255,255,0,0.8);
+        position: relative;
+        margin: 0 auto;
+    }
+    #container_PC #community_PC_01_container{
+        width: 1000px;  /* 넓이 1600px 고정*/
+        height: 301px; /* 높이 600px 고정*/
+        position: relative; /* 가운데 정렬 */
+        margin: 0 auto;
+    }
+
+    /* #container_PC #community_PC_01_logo_line{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+
+    } */
+    #container_PC #community_PC_01_logo_line_middle{
+        position:relative;
+        top:-51px;
+        margin:0 auto;
+        z-index: 2;
+    }
+    #container_PC #kakao_PC_01_logo_top{
+        height: 150px;
+        text-align: center;
+        color: #555;
+        font-size: 50px;
+        letter-spacing: 10px;
+        position: relative;
+        top:30px;
+    }
+    #container_PC #kakao_PC_01_logo_bottom{
+        position:relative;
+        top:-20px;
+        text-align: center;
+        color: #555;
+        font-size: 25px;
+        letter-spacing: 15px;
+        font-weight:800;
+    }
+    #container_PC #kakao_PC_01_left{
+        height: 1px;
+        width: 500px;   
+        position: absolute;
+        top:150px;
+        left:0px;
+
+        background: -webkit-linear-gradient(left,rgba(0,0,0,1),rgba(255,255,0,1));
+    }
+    #container_PC #kakao_PC_01_right{
+        height: 1px;
+        width: 500px;   
+        position: absolute;
+        top:150px;
+        right:0px;
+
+        background: -webkit-linear-gradient(right,rgba(0,0,0,1),rgba(255,255,0,1));
+    }
+
+
+
+
+}
