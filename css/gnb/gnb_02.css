@@ -113,7 +113,7 @@
         text-align: center;
     }
     #container_Mobile .test_information{
-        height: 330px;
+        height: 340px;
         display: flex;
         flex-direction: row;
         /* gap:10px; */
@@ -121,7 +121,7 @@
     }
     #container_Mobile .test_information_box{
         width: 40%;
-        height: 300px;
+        height: 310px;
         background-color: #fff;
         box-shadow: 5px 5px 3px rgba(10, 10, 10, 0.5);
         border:1px solid #aaa;
@@ -406,7 +406,7 @@
         left: 70px;
         
         text-align: center;
-        line-height: 50px;
+        line-height: 60px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: 40px; 
         color: #fff;

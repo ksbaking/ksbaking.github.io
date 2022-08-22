@@ -149,7 +149,7 @@
         left:5%;
         width: 90%; */
         /* height: 450px; */
-        padding-top: 10px;
+        padding-top: 30px;
 
         display: flex;
         flex-direction: row;
@@ -187,7 +187,7 @@
     }
     #container_Mobile .instructor_introduce_box_02{
         width: 100%;
-        height: 110px;
+        height: 230px;
         background-color: dodgerblue;
 
         display: flex;
@@ -553,7 +553,7 @@
     /* --------------------------  '강사' 시작 ---------------------------- */
     #container_PC .instructor_PC{
         width: 1200px;
-        height: 800px;
+        height: 850px;
         background: linear-gradient(to right, rgb(135,206,250),white);
     }
     #container_PC .instructor_introduce_box_01{
@@ -597,7 +597,7 @@
     #container_PC .instructor_introduce_box_02{
         position: relative;
         width: 1100px;
-        height: 250px;
+        height: 310px;
         background-color: dodgerblue;
         left: 50px;
 
@@ -687,8 +687,10 @@
     #container_PC #facilities_PC_01 .facilities_picture_column{
         width: 290px;
         height: 290px;
-        border: 5px solid #fff;
-        background-size: 280px 280px;
+        border: 5px solid #eee;
+        /* background-size: 280px 280px; */
+        background: no-repeat;
+        background-size: 100% 100%;
     }
     #container_PC #facilities_PC_01 #facilities_footer_contents{
         position: relative;
